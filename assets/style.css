@@ -15,7 +15,7 @@
   --tinte-2:#46506E;      /* Zweittext, 7:1 auf Blatt */
   --alu:#7A8494;          /* Geisterlinien, nur Dekor */
   --linie:rgba(16,23,51,.2);
-  --daemm:#2B3F9E;        /* Dämmerungsblau: Farbfeld, Link, Fokus (8:1 auf Blatt, 9:1 mit Weiß) */
+  --daemm:#101733;        /* Logo-Navy */
   --daemm-hell:#DDE3FA;
   --licht:#FFB43C;        /* LED-Licht und Ortstafel-Gelb: Aktion */
   --licht-hover:#FFC56A;
@@ -164,7 +164,7 @@ body.nav-open{overflow:hidden}
   .has-dropdown:hover .caret{transform:rotate(180deg)}
   .dropdown a:hover{background:var(--blatt)}
   .btn:hover{--bg:var(--licht-hover)}
-  .btn-ink:hover{--bg:var(--daemm)}
+  .btn-ink:hover{--bg:var(--tinte-2)}
   .btn-line:hover{--bg:var(--tinte);--fg:#fff}
   .on-dark .btn-line:hover,.mobile-bar .btn-line:hover,.cta-band .btn-line:hover{--bg:#fff;--fg:var(--tinte)}
   .btn:hover svg{transform:translateX(3px)}
