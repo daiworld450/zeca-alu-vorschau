@@ -1,0 +1,442 @@
+{
+  "schema_version": 1,
+  "titel": "Globale Angaben (alle Seiten)",
+  "gilt_fuer": [
+    "inhalt/seite.json"
+  ],
+  "felder": [
+    {
+      "schluessel": "firma",
+      "label": "Firma",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "name",
+          "label": "Firmenname",
+          "typ": "text",
+          "hilfe": "Wird in Logo-Beschreibung, Fußzeile und Suchmaschinen-Daten verwendet.",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "inhaber",
+          "label": "Inhaber",
+          "typ": "text",
+          "hilfe": "Erscheint in der Fußzeile.",
+          "pflicht": true,
+          "max": 60
+        },
+        {
+          "schluessel": "slogan",
+          "label": "Slogan",
+          "typ": "text",
+          "hilfe": "Ohne Punkt am Ende, z. B. \"Ihre Träume, unser Handwerk\".",
+          "pflicht": true,
+          "max": 60
+        }
+      ]
+    },
+    {
+      "schluessel": "kontakt",
+      "label": "Kontaktdaten",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "telefone",
+          "label": "Telefonnummern",
+          "typ": "liste",
+          "hilfe": "Die erste Nummer ist die Haupt-Nummer.",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Telefonnummer",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "anzeige",
+                "label": "Nummer (so wie sie angezeigt wird)",
+                "typ": "text",
+                "hilfe": "Format \"0176 24860016\". Der Anruf-Link (+49...) und die Schreibweise für Google werden automatisch daraus gebildet. Die erste Nummer steht überall (Kopfzeile, Knöpfe, Fußzeile), alle weiteren nur im Kontaktblock.",
+                "pflicht": true,
+                "max": 25,
+                "muster": "^(\\+|0)[0-9][0-9 /\\-]{5,24}$"
+              }
+            ]
+          },
+          "min": 1,
+          "max": 3,
+          "eintrag_label": "Nummer"
+        },
+        {
+          "schluessel": "email",
+          "label": "E-Mail-Adresse",
+          "typ": "text",
+          "beispiel": "name@firma.de",
+          "hilfe": "Wird auf allen Seiten angezeigt. Ändert NICHT automatisch die Empfängeradresse des Kontaktformulars (siehe \"Kontaktformular\").",
+          "pflicht": true,
+          "max": 80,
+          "muster": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+        },
+        {
+          "schluessel": "strasse",
+          "label": "Straße und Hausnummer",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 60
+        },
+        {
+          "schluessel": "plz",
+          "label": "Postleitzahl",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 10
+        },
+        {
+          "schluessel": "ort",
+          "label": "Ort",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 60
+        },
+        {
+          "schluessel": "instagram",
+          "label": "Instagram-Adresse",
+          "typ": "text",
+          "beispiel": "https://www.instagram.com/ihr-profil",
+          "hilfe": "Vollständige Adresse mit https://",
+          "pflicht": true,
+          "max": 200,
+          "muster": "^https://"
+        },
+        {
+          "schluessel": "facebook",
+          "label": "Facebook-Adresse",
+          "typ": "text",
+          "beispiel": "https://www.facebook.com/ihr-profil",
+          "hilfe": "Vollständige Adresse mit https://",
+          "pflicht": true,
+          "max": 200,
+          "muster": "^https://"
+        }
+      ]
+    },
+    {
+      "schluessel": "einsatzgebiet",
+      "label": "Einsatzgebiet (Städte)",
+      "typ": "gruppe",
+      "hilfe": "Wird auf Startseite und Einsatzgebiet-Seite angezeigt und für die Suchmaschinen-Daten verwendet.",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "sitz",
+          "label": "Firmensitz (Stadt)",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 60
+        },
+        {
+          "schluessel": "nachbarn",
+          "label": "Nachbarstädte",
+          "typ": "liste",
+          "hilfe": "",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Stadt",
+            "typ": "text",
+            "hilfe": "",
+            "max": 40
+          },
+          "min": 0,
+          "max": 8,
+          "eintrag_label": "Stadt"
+        },
+        {
+          "schluessel": "weitere",
+          "label": "Weitere Städte",
+          "typ": "liste",
+          "hilfe": "",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Stadt",
+            "typ": "text",
+            "hilfe": "",
+            "max": 40
+          },
+          "min": 0,
+          "max": 16,
+          "eintrag_label": "Stadt"
+        },
+        {
+          "schluessel": "beschriftung_sitz",
+          "label": "Beschriftung \"Unser Sitz\"",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "beschriftung_nachbarn",
+          "label": "Beschriftung \"Nachbarstädte\"",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "beschriftung_weitere",
+          "label": "Beschriftung \"Weitere Städte\"",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 60
+        }
+      ]
+    },
+    {
+      "schluessel": "navigation",
+      "label": "Menü und Knöpfe",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "leistungen",
+          "label": "Menüpunkt \"Leistungen\"",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 30
+        },
+        {
+          "schluessel": "cta",
+          "label": "Knopf oben rechts / unten am Handy",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 30
+        },
+        {
+          "schluessel": "mobil_anrufen",
+          "label": "Anruf-Knopf im Handy-Menü (Zusatz nach der Nummer)",
+          "typ": "text",
+          "hilfe": "Ergibt z. B. \"0176 24860016 anrufen\".",
+          "pflicht": true,
+          "max": 20
+        },
+        {
+          "schluessel": "mobilleiste_anrufen",
+          "label": "Anruf-Knopf in der Handy-Leiste unten",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 20
+        }
+      ]
+    },
+    {
+      "schluessel": "texte",
+      "label": "Wiederkehrende Texte",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "beratung_button",
+          "label": "Knopf \"Beratung anfordern\"",
+          "typ": "text",
+          "hilfe": "Startseite und alle Leistungsseiten.",
+          "pflicht": true,
+          "max": 40
+        }
+      ]
+    },
+    {
+      "schluessel": "formular",
+      "label": "Kontaktformular",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "aktion",
+          "label": "Formular-Adresse (FormSubmit)",
+          "typ": "text",
+          "hilfe": "ACHTUNG: Hier landen die Anfragen. Nur ändern, wenn der Formular-Dienst neu eingerichtet wurde (Aktivierungs-Mail von FormSubmit bestätigen). Erlaubt ist nur eine Adresse der Form https://formsubmit.co/ajax/…",
+          "pflicht": true,
+          "max": 200,
+          "muster": "^https://formsubmit\\.co/ajax/[A-Za-z0-9@._%+\\-]+$"
+        },
+        {
+          "schluessel": "betreff",
+          "label": "Betreff der Anfrage-Mails",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "titel",
+          "label": "Überschrift über dem Formular",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Absenden-Knopfs",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "datenschutzhinweis",
+          "label": "Hinweis unter dem Absenden-Knopf",
+          "typ": "textarea",
+          "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+          "pflicht": true,
+          "max": 300,
+          "markup": true
+        },
+        {
+          "schluessel": "option_sonstiges",
+          "label": "Auswahlpunkt \"Sonstiges\"",
+          "typ": "text",
+          "hilfe": "Letzter Punkt in der Liste \"Gewünschte Leistung\".",
+          "pflicht": true,
+          "max": 30
+        }
+      ]
+    },
+    {
+      "schluessel": "karte",
+      "label": "Karten-Hinweis (Google Maps)",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "hinweis",
+          "label": "Datenschutz-Hinweis vor dem Laden der Karte",
+          "typ": "textarea",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 240
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 30
+        }
+      ]
+    },
+    {
+      "schluessel": "footer",
+      "label": "Fußzeile",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "beschreibung",
+          "label": "Kurzbeschreibung im Fuß",
+          "typ": "textarea",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 200
+        },
+        {
+          "schluessel": "jahr",
+          "label": "Jahreszahl (Platzhalter)",
+          "typ": "text",
+          "beispiel": "2026",
+          "hilfe": "Die Seite zeigt per Skript immer das aktuelle Jahr. Dieser Wert gilt nur, wenn Skripte aus sind.",
+          "pflicht": true,
+          "max": 4,
+          "muster": "^[0-9]{4}$"
+        }
+      ]
+    },
+    {
+      "schluessel": "veroeffentlichung",
+      "label": "Veröffentlichung",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "domain",
+          "label": "Domain",
+          "typ": "text",
+          "hilfe": "Mit https:// und ohne Schrägstrich am Ende, z. B. \"https://zeca-alu.de\". Für die Vorschau die Adresse des Vorschau-Servers.",
+          "pflicht": true,
+          "max": 100,
+          "muster": "^https?://[A-Za-z0-9.\\-]+(:[0-9]{1,5})?$"
+        },
+        {
+          "schluessel": "basis_pfad",
+          "label": "Basis-Pfad",
+          "typ": "text",
+          "hilfe": "\"/\" für die Hauptseite, \"/zeca-alu-vorschau/\" für eine Vorschau in einem Unterordner. Beginnt und endet mit \"/\".",
+          "pflicht": true,
+          "max": 100,
+          "muster": "^/([A-Za-z0-9_.\\-]+/)*$"
+        },
+        {
+          "schluessel": "noindex",
+          "label": "Für Suchmaschinen sperren (noindex)",
+          "typ": "janein",
+          "hilfe": "Ja: Vorschau-Betrieb, Google soll die Seite NICHT aufnehmen. Nein: öffentliche Seite.",
+          "pflicht": true
+        }
+      ]
+    },
+    {
+      "schluessel": "admin",
+      "label": "Verwaltung (Admin-Panel)",
+      "typ": "gruppe",
+      "hilfe": "Technische Einstellungen für die Verwaltungsseite unter /admin/. Nur für Entwickler.",
+      "pflicht": false,
+      "felder": [
+        {
+          "schluessel": "aktiv",
+          "label": "Verwaltungsseite ausliefern",
+          "typ": "janein",
+          "hilfe": "Ja: die Seite /admin/ wird mit der Webseite gebaut. Nein: es gibt keine Verwaltungsseite.",
+          "pflicht": true
+        },
+        {
+          "schluessel": "repo",
+          "label": "GitHub-Projekt",
+          "typ": "text",
+          "hilfe": "Form \"besitzer/projekt\", z. B. \"daiworld450/zeca-alu-vorschau\". Dorthin schreibt die Verwaltungsseite.",
+          "pflicht": true,
+          "max": 100,
+          "muster": "^[A-Za-z0-9_.\\-]+/[A-Za-z0-9_.\\-]+$"
+        },
+        {
+          "schluessel": "branch",
+          "label": "Zweig (Branch)",
+          "typ": "text",
+          "hilfe": "Zweig für Inhalte: \"inhalt\". Der Code liegt auf \"main\" und wird dort nur vom Entwickler geändert (siehe ADMIN-ANLEITUNG.md, Abschnitt Grenzen).",
+          "pflicht": true,
+          "max": 60,
+          "muster": "^[A-Za-z0-9_.][A-Za-z0-9_./\\-]*$"
+        }
+      ]
+    }
+  ],
+  "typ": "gruppe"
+}

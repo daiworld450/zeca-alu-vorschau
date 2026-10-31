@@ -1,0 +1,17 @@
+  <section class="kopf-schlicht">
+    <div class="sheet">
+      {{> brotkrumen}}
+      <h1 style="margin-top:clamp(6px,1vw,14px)">{{kopf.h1}}</h1>
+      <p class="lead">{{kopf.lead}}</p>
+    </div>
+  </section>
+  {{#jede projekte}}<section class="sec{{#wenn @erste}} sec-after-head{{/wenn}}">
+    <div class="sheet">
+      <div class="sec-head"><h2>{{ueberschrift}}</h2>
+      <p>{{beschreibung}}</p></div>
+      <div class="gal" style="margin-top:clamp(28px,4vw,56px)">
+        {{#jede fotos}}<figure><div class="photo">{{img}}</div>{{#wenn bildunterschrift}}<figcaption class="cap">{{bildunterschrift}}</figcaption>{{/wenn}}</figure>
+        {{/jede}}</div>
+    </div>
+  </section>
+  {{/jede}}{{> cta_band}}

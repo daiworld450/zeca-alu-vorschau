@@ -1,0 +1,45 @@
+{
+  "name": "Über uns",
+  "seo": {
+    "title": "Über uns | ZeCa-Alu Mülheim an der Ruhr",
+    "beschreibung": "ZeCa-Alu ist ein junger Handwerksbetrieb aus Mülheim an der Ruhr für Terrassenüberdachung, Carport, Wintergarten und mehr. Inhaber: Zemin Yüregil.",
+    "og_aktiv": false
+  },
+  "kopf": {
+    "h1": "Handwerk mit persönlicher Note",
+    "lead": "ZeCa-Alu wurde von Zemin Yüregil in Mülheim an der Ruhr gegründet, mit dem Anspruch, jedes Projekt individuell und mit Handschlagqualität umzusetzen."
+  },
+  "text": {
+    "titel": "ZeCa-Alu: Ihre Träume, unser Handwerk",
+    "absaetze": [
+      "ZeCa-Alu ist ein junger Handwerksbetrieb mit Sitz in Mülheim an der Ruhr. Inhaber Zemin Yüregil und sein Team haben sich auf Terrassenüberdachungen, Carports, Wintergärten, Vordächer, Aluminiumzäune und Fliegengitter spezialisiert.",
+      "Weil wir noch ein junger Betrieb sind, kennt Sie bei uns nicht ein Callcenter, sondern ein fester Ansprechpartner, von der ersten Beratung bis zur letzten Schraube. Genau das wollen wir auch bleiben, wenn wir wachsen."
+    ],
+    "foto": {
+      "bild": "terrasse-doppelhaus-1",
+      "alt": "Von ZeCa-Alu realisierte Terrassenüberdachung in Mülheim an der Ruhr"
+    }
+  },
+  "werte": {
+    "titel": "Worauf Sie sich bei uns verlassen können",
+    "eintraege": [
+      {
+        "titel": "Persönliche Beratung",
+        "text": "Wir kommen zu Ihnen, nehmen Maß und beraten ohne Verkaufsdruck."
+      },
+      {
+        "titel": "Alles aus einer Hand",
+        "text": "Planung, Fertigung und Montage übernehmen wir komplett: ein Ansprechpartner für das ganze Projekt."
+      },
+      {
+        "titel": "Verlässliches Zeitmanagement",
+        "text": "Vereinbarte Termine halten wir ein und sagen Ihnen ehrlich Bescheid, falls sich etwas verschiebt."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Lernen Sie uns kennen",
+    "text": "Rufen Sie an oder vereinbaren Sie eine kostenlose Beratung vor Ort.",
+    "button": "Jetzt Kontakt aufnehmen"
+  }
+}

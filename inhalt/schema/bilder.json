@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "titel": "Bildliste",
+  "gilt_fuer": [
+    "inhalt/bilder.json"
+  ],
+  "felder": [
+    {
+      "schluessel": "ordner",
+      "label": "Bilder-Ordner",
+      "typ": "text",
+      "hilfe": "Fest vorgegeben, nicht ändern.",
+      "pflicht": true,
+      "max": 60,
+      "muster": "^images(/[a-z0-9][a-z0-9_\\-]*)+$",
+      "nur_lesen": true
+    },
+    {
+      "schluessel": "bilder",
+      "label": "Fotos",
+      "typ": "liste",
+      "hilfe": "Alle Fotos, die auf der Seite verwendet werden können.",
+      "pflicht": true,
+      "eintrag": {
+        "label": "Foto",
+        "typ": "gruppe",
+        "hilfe": "",
+        "felder": [
+          {
+            "schluessel": "name",
+            "label": "Basisname",
+            "typ": "text",
+            "hilfe": "Nur Kleinbuchstaben, Ziffern und Bindestriche, z. B. \"carport-essen-1\". Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp (oder .jpg, siehe „Dateiformat“).",
+            "pflicht": true,
+            "max": 60,
+            "muster": "^[a-z0-9][a-z0-9\\-/]*$"
+          },
+          {
+            "schluessel": "alt",
+            "label": "Standard-Bildbeschreibung (Alt-Text)",
+            "typ": "text",
+            "hilfe": "Wird verwendet, wenn an der Einbaustelle keine eigene Beschreibung steht.",
+            "pflicht": true,
+            "max": 200
+          },
+          {
+            "schluessel": "format",
+            "label": "Dateiformat",
+            "typ": "auswahl",
+            "hilfe": "Wird beim Hochladen automatisch gesetzt. WebP ist Standard; JPEG nehmen Browser, die kein WebP erzeugen können (zum Beispiel Safari am iPhone). Dateien: <name>-800.webp oder <name>-800.jpg usw.",
+            "pflicht": false,
+            "optionen": [
+              {
+                "wert": "webp",
+                "label": "WebP"
+              },
+              {
+                "wert": "jpg",
+                "label": "JPEG"
+              }
+            ]
+          },
+          {
+            "schluessel": "original",
+            "label": "Original-Datei (JPG)",
+            "typ": "text",
+            "hilfe": "Nur für Vorschaubilder in Suchmaschinen/Netzwerken nötig, z. B. \"carport-essen-1.jpg\".",
+            "pflicht": false,
+            "max": 80,
+            "muster": "^[a-z0-9][a-z0-9\\-/]*\\.(jpg|jpeg|png)$"
+          }
+        ]
+      },
+      "min": 0,
+      "max": 200,
+      "eintrag_label": "Foto"
+    },
+    {
+      "schluessel": "logo",
+      "label": "Logo",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "datei",
+          "label": "Logo-Datei",
+          "typ": "text",
+          "hilfe": "Datei im Bilder-Ordner (WebP, mit Transparenz).",
+          "pflicht": true,
+          "max": 80,
+          "muster": "^[a-z0-9][a-z0-9._\\-]*\\.webp$"
+        },
+        {
+          "schluessel": "alt",
+          "label": "Beschreibung im Fuß",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 80
+        }
+      ]
+    }
+  ],
+  "typ": "gruppe"
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- impeccable-disable cramped-padding, codex-grid-background -- Listen mit Linien statt Kästen und das Raster im Zeichnungsfeld sind Absicht -->
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="{{meta.csp}}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.beschreibung}}" />
+<link rel="canonical" href="{{meta.canonical}}" />
+{{#wenn meta.og}}<meta property="og:type" content="website" />
+<meta property="og:title" content="{{meta.title}}" />
+{{#wenn meta.og_beschreibung}}<meta property="og:description" content="{{meta.og_beschreibung}}" />
+{{/wenn}}{{#wenn meta.og_bild}}<meta property="og:image" content="{{meta.og_bild}}" />
+{{/wenn}}<meta property="og:url" content="{{meta.canonical}}" />
+{{/wenn}}<meta name="robots" content="{{meta.robots}}" />
+<meta name="theme-color" content="#EDF1F4" />
+<link rel="icon" href="{{basis}}favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="{{basis}}assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin />
+{{#wenn meta.preload_bild}}{{meta.preload_bild}}
+{{/wenn}}<script>document.documentElement.className+=" js"</script>
+<link rel="stylesheet" href="{{basis}}assets/style.css?v={{technik.css_version}}" />
+{{meta.jsonld}}
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="sentinel" aria-hidden="true"></div>
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="{{link.start}}" aria-label="{{firma.name}} Startseite"><img src="{{logo.src}}" alt="{{firma.name}}, {{firma.slogan}}" width="{{logo.breite}}" height="{{logo.hoehe}}" /></a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <ul class="nav-links">
+        <li><a href="{{link.start}}"{{nav.start.attr}}>{{nav.start.name}}</a></li>
+        <li class="has-dropdown">
+          <a href="{{link.start}}#leistungen"{{nav.leistungen.attr}}>{{nav.leistungen.name}} {{> caret}}</a>
+          <ul class="dropdown">{{#jede nav.leistungen.eintraege}}<li><a href="{{href}}"{{attr}}>{{name}}</a></li>{{/jede}}</ul>
+        </li>
+        {{#jede nav.haupt}}<li><a href="{{href}}"{{attr}}>{{name}}</a></li>
+        {{/jede}}
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:{{tel.tel}}">{{> telefon_symbol}}{{tel.anzeige}}</a>
+      <a class="btn btn-sm" href="{{link.kontakt}}"{{nav.kontakt_cta_attr}}>{{nav.cta}}</a>
+      <button class="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Hauptmenü">
+  <a href="{{link.start}}"{{nav.start.attr}}>{{nav.start.name}}</a>
+  <a href="{{link.start}}#leistungen">{{nav.leistungen.name}}</a>
+  <div class="sub">
+    {{#jede nav.leistungen.eintraege}}<a href="{{href}}"{{attr}}>{{name}}</a>{{/jede}}
+  </div>
+  {{#jede nav.haupt}}<a href="{{href}}"{{attr}}>{{name}}</a>
+  {{/jede}}<a href="{{link.kontakt}}"{{nav.kontakt.attr}}>{{nav.kontakt.name}}</a>
+  <a class="btn mnav-cta" href="tel:{{tel.tel}}">{{tel.anzeige}} {{nav.mobil_anrufen}}</a>
+</nav>
+
+<main id="main">
+{{inhalt}}
+</main>
+
+<footer class="site">
+  <div class="sheet">
+    <div class="footer-grid">
+      <div class="footer-col footer-logo">
+        <img src="{{logo.src}}" alt="{{logo.alt}}" width="{{logo.breite}}" height="{{logo.hoehe}}" loading="lazy" />
+        <p>{{footer.beschreibung}}</p>
+        <div class="social-icons">
+          <a href="{{instagram}}" aria-label="Instagram (öffnet in neuem Tab)" target="_blank" rel="noopener">{{> instagram_symbol}}</a>
+          <a href="{{facebook}}" aria-label="Facebook (öffnet in neuem Tab)" target="_blank" rel="noopener">{{> facebook_symbol}}</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Leistungen</p>
+        {{#jede nav.footer_leistungen}}<a href="{{href}}">{{name}}</a>{{/jede}}
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Unternehmen</p>
+        {{#jede nav.footer_unternehmen}}<a href="{{href}}">{{name}}</a>
+        {{/jede}}
+      </div>
+      <div class="footer-col">
+        <p class="footer-title">Kontakt</p>
+        <a href="tel:{{tel.tel}}">{{tel.anzeige}}</a>
+        <a href="mailto:{{email}}">{{email}}</a>
+        <p>{{strasse}}<br/>{{plz}} {{ort}}</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>{{#jede nav.footer_recht}}<a href="{{href}}">{{name}}</a>{{/jede}}</div>
+      <div>© <span id="jahr">{{footer.jahr}}</span> {{firma.name}} · {{firma.inhaber}}</div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-line" href="tel:{{tel.tel}}">{{> telefon_symbol}}{{nav.mobilleiste_anrufen}}</a>
+  <a class="btn" href="{{nav.mobilleiste_ziel}}">{{nav.cta}}</a>
+</div>
+<script src="{{basis}}assets/main.js?v={{technik.js_version}}"></script>
+<script>document.getElementById('jahr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

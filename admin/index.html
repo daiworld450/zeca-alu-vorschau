@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.github.com; img-src 'self' blob:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#101733">
+<title>Verwaltung ZeCa-Alu</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="admin.css">
+<noscript><link rel="stylesheet" href="ohne-js.css"></noscript>
+</head>
+<body>
+<a class="sprunglink" id="sprunglink" href="#inhalt">Zum Inhalt springen</a>
+<header class="kopf" id="kopf">
+  <div class="kopf-innen">
+    <a class="marke" id="marke" href="#/">Verwaltung <span class="marke-name">ZeCa-Alu</span></a>
+    <button type="button" class="knopf knopf-leise" id="abmelden" hidden>Abmelden</button>
+  </div>
+</header>
+<main class="inhalt" id="inhalt" tabindex="-1">
+  <p class="laden-text">Wird geladen …</p>
+  <noscript><p class="meldung meldung-fehler">Die Verwaltung braucht JavaScript. Bitte JavaScript im Browser einschalten.</p></noscript>
+</main>
+<div class="leiste" id="leiste" role="region" aria-label="Änderungen veröffentlichen" hidden></div>
+<div class="hinweise" id="hinweise" role="status" aria-live="polite"></div>
+<div class="nur-sprecher" id="sprecher" role="status" aria-live="polite"></div>
+<dialog class="dialog" id="dialog" aria-labelledby="dialog-titel"></dialog>
+<script type="module" src="admin.js"></script>
+</body>
+</html>

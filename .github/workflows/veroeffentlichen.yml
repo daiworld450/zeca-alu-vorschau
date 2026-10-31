@@ -1,0 +1,96 @@
+# Baut die Seite und veröffentlicht sie über GitHub Pages (Quelle: „GitHub Actions“).
+#
+# Zwei Zweige, zwei Rollen (Schutz des Zugangsschlüssels, siehe ADMIN-ANLEITUNG.md, Abschnitt „Grenzen“):
+#   main    Code (Generator, Vorlagen, Verwaltungsseite, Workflow). Nur der Entwickler schreibt hier (Ruleset auf main).
+#   inhalt  Inhalte und Fotos. Hier schreibt die Verwaltungsseite mit dem Schlüssel des Inhabers.
+#
+# Der Auftrag „build“ nimmt den Code IMMER aus main. Aus inhalt übernimmt er nur inhalt/ (ohne inhalt/schema/ und
+# inhalt/struktur.json, die kommen aus main) und Bilddateien aus images/. Vorher prüft .github/skripte/pruefe_inhalt_branch.py,
+# dass inhalt gegenüber main nur dort etwas geändert hat und in images/ nur .webp/.jpg/.jpeg/.png (keine Links, keine ausführbaren Dateien).
+#
+# Läuft bei jedem Push auf main oder inhalt (also auch nach jedem „Veröffentlichen“ in der Verwaltung) und von Hand über „Run workflow“.
+# Hinweis: Bei einem Push auf inhalt gilt die Workflow-Datei, die auf inhalt liegt. Der Schlüssel des Inhabers hat bewusst KEIN Recht
+# „Workflows“; GitHub lehnt Änderungen an .github/workflows/ damit ab. Das Prüfskript meldet sie zusätzlich.
+#
+# Scheitert die Prüfung oder „python3 bauen.py“ (Pflichtfeld fehlt, Foto fehlt, Link kaputt ...), bricht der Auftrag „build“ ab.
+# Der Auftrag „deploy“ wartet auf „build“ und startet dann gar nicht: Die veröffentlichte Seite bleibt unverändert.
+#
+# Die Aktionen sind auf Commit-SHAs festgelegt (Versionen im Kommentar). Aktualisieren: neue SHA per "gh api" holen, im Probelauf prüfen.
+name: Bauen und veröffentlichen
+
+on:
+  push:
+    branches: [main, inhalt]
+    paths:
+      - "inhalt/**"
+      - "images/**"
+      - "vorlagen/**"
+      - "assets/**"
+      - "admin/**"
+      - "bauen.py"
+      - "favicon.svg"
+      - ".github/workflows/veroeffentlichen.yml"
+      - ".github/skripte/**"
+  workflow_dispatch:
+
+# Standard: keine Rechte. Jeder Auftrag fordert nur an, was er braucht.
+permissions: {}
+
+# Nur ein Auftrag gleichzeitig; ein laufender Auftrag wird nie abgebrochen (halb fertige Veröffentlichung vermeiden).
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      # Code aus main, samt Verlauf aller Zweige (für die Prüfung von inhalt). Kein Zugriffstoken im Arbeitsordner behalten.
+      - name: Code holen (Zweig main)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Python einrichten
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Zweig inhalt prüfen (nur inhalt/ und images/, nur Bilddateien)
+        run: python3 -I .github/skripte/pruefe_inhalt_branch.py --basis origin/main --inhalt origin/inhalt
+
+      - name: Inhalte aus dem Zweig inhalt übernehmen
+        run: |
+          set -euo pipefail
+          git worktree add --detach "$RUNNER_TEMP/inhalt-zweig" origin/inhalt
+          # Texte und Einstellungen. schema/ und struktur.json bleiben aus main (Entwickler-Dateien), Verknüpfungen werden übersprungen.
+          rsync -rt --no-links --delete --exclude='schema/' --exclude='struktur.json' "$RUNNER_TEMP/inhalt-zweig/inhalt/" inhalt/
+          # Fotos: nur Bilddateien. Andere Dateien in images/ (Notizen, Maßdateien) bleiben unberührt und werden nicht ausgeliefert.
+          rsync -rt --no-links --delete --include='*/' --include='*.webp' --include='*.jpg' --include='*.jpeg' --include='*.png' --exclude='*' \
+            "$RUNNER_TEMP/inhalt-zweig/images/" images/
+
+      - name: Seite bauen (prüft zuerst, baut nur bei 0 Fehlern)
+        run: python3 bauen.py
+
+      - name: Seite als Artefakt bereitstellen
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9   # v5.0.0
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Auf GitHub Pages veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346   # v5.0.1

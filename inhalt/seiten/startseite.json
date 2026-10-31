@@ -1,0 +1,193 @@
+{
+  "name": "Start",
+  "seo": {
+    "title": "ZeCa-Alu Mülheim | Terrassenüberdachung, Carport & Wintergarten im Ruhrgebiet",
+    "beschreibung": "ZeCa-Alu aus Mülheim an der Ruhr baut Terrassenüberdachungen, Carports, Wintergärten, Vordächer, Alu-Zäune und Fliegengitter im gesamten Ruhrgebiet. Beratung, Planung und Montage aus einer Hand – kostenlos und unverbindlich.",
+    "og_aktiv": true,
+    "og_beschreibung": "Terrassenüberdachungen, Carports, Wintergärten, Vordächer, Alu-Zäune und Fliegengitter – geplant und montiert von ZeCa-Alu im Ruhrgebiet.",
+    "og_bild": "terrasse-doppelhaus-1"
+  },
+  "hero": {
+    "zeile1": "Terrassenüberdachung,",
+    "zeile2": "Carport & Wintergarten",
+    "unterzeile": "in Mülheim und im Ruhrgebiet",
+    "lead": "ZeCa-Alu aus Mülheim an der Ruhr plant und baut Terrassenüberdachungen, Carports, Wintergärten, Vordächer, Alu-Zäune und Fliegengitter, persönlich beraten, präzise verarbeitet, termintreu montiert.",
+    "foto": {
+      "bild": "terrasse-doppelhaus-1",
+      "alt": "Realisierte Terrassenüberdachung von ZeCa-Alu an einem Doppelhaus in Mülheim an der Ruhr, Abenddämmerung"
+    },
+    "massangabe": "Breite nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Beratung",
+        "wert": "Persönliche Beratung vor Ort"
+      },
+      {
+        "label": "Leistung",
+        "wert": "Planung, Fertigung & Montage aus einer Hand"
+      },
+      {
+        "label": "Einsatzgebiet",
+        "wert": "Gesamtes Ruhrgebiet"
+      }
+    ]
+  },
+  "leistungen": {
+    "titel": "Alles rund um Terrasse, Carport & Fassade",
+    "einleitung": "Sechs Gewerke, ein Ansprechpartner: von der ersten Idee über das Aufmaß bis zur fertigen Montage bei Ihnen zu Hause.",
+    "eintraege": [
+      {
+        "seite": "terrassenueberdachung",
+        "text": "Wetterschutz aus Aluminium und Glas für Terrasse und Garten, das ganze Jahr über."
+      },
+      {
+        "seite": "carport",
+        "text": "Maßgeschneiderter Unterstand für ein oder zwei Fahrzeuge, robust und zeitlos gestaltet."
+      },
+      {
+        "seite": "wintergarten",
+        "text": "Mehr Wohnraum mit Glas: ein heller Rückzugsort, der Innen und Außen verbindet."
+      },
+      {
+        "seite": "vordach",
+        "text": "Schutz für den Hauseingang bei Regen und Schnee, dezent oder als Blickfang."
+      },
+      {
+        "seite": "alu-zaun",
+        "text": "Langlebige Einfriedung für Grundstück und Garten, pflegearm und formstabil."
+      },
+      {
+        "seite": "fliegengitter",
+        "text": "Insektenschutz nach Maß für Fenster und Türen, unauffällig und funktional."
+      }
+    ]
+  },
+  "handwerk": {
+    "titel": "Handwerk, das zu Ihrem Zuhause passt",
+    "absaetze": [
+      "Zemin Yüregil und sein Team planen jedes Projekt individuell nach Aufmaß, keine Katalogware von der Stange. Von der ersten Beratung bis zur letzten Schraube bleibt ein fester Ansprechpartner an Ihrer Seite.",
+      "Wir setzen auf hochwertiges Aluminium, präzise Verarbeitung und ein Zeitmanagement, auf das Sie sich verlassen können, damit aus Ihrer Idee ein Ort wird, den Sie das ganze Jahr über genießen."
+    ],
+    "button": "Mehr über uns erfahren"
+  },
+  "farbe": {
+    "label": "Beispiel: Pulverbeschichtung nach RAL",
+    "zeichnung_beschreibung": "Zeichnung einer Terrassenüberdachung, deren Aluminiumteile die gewählte RAL-Farbe annehmen",
+    "farben": [
+      {
+        "code": "RAL 7016",
+        "name": "Anthrazitgrau",
+        "hex": "#383E42"
+      },
+      {
+        "code": "RAL 9005",
+        "name": "Tiefschwarz",
+        "hex": "#0E0E10"
+      },
+      {
+        "code": "RAL 9007",
+        "name": "Graualuminium",
+        "hex": "#8F8F8C"
+      },
+      {
+        "code": "RAL 9006",
+        "name": "Weißaluminium",
+        "hex": "#A5A5A5"
+      },
+      {
+        "code": "RAL 9016",
+        "name": "Verkehrsweiß",
+        "hex": "#F1F1EE"
+      },
+      {
+        "code": "RAL 8014",
+        "name": "Sepiabraun",
+        "hex": "#4A3A2C"
+      },
+      {
+        "code": "RAL 6005",
+        "name": "Moosgrün",
+        "hex": "#2F4538"
+      },
+      {
+        "code": "RAL 5014",
+        "name": "Taubenblau",
+        "hex": "#637D96"
+      }
+    ],
+    "hinweis": "Prinzipzeichnung. Nahezu jeder RAL-Ton ist möglich, passend zu Fenstern, Türen und Fassade. Bildschirmfarben sind Näherungen."
+  },
+  "projekt": {
+    "foto": {
+      "bild": "terrasse-doppelhaus-2",
+      "alt": "Terrassenüberdachung Doppelhaus Mülheim an der Ruhr, Detailansicht der Konstruktion mit LED-Beleuchtung und Sichtschutz"
+    },
+    "titel": "Ein Projekt aus dem Ruhrgebiet",
+    "text": "Terrassenüberdachung an einem Doppelhaus in Mülheim an der Ruhr, mit integrierter LED-Beleuchtung und passgenauen Sichtschutzwänden.",
+    "button": "Projekt im Detail ansehen",
+    "markierungen": [
+      {
+        "x": 1140,
+        "y": 700,
+        "name": "Stütze"
+      },
+      {
+        "x": 560,
+        "y": 325,
+        "name": "Träger"
+      },
+      {
+        "x": 760,
+        "y": 470,
+        "name": "Sparren"
+      },
+      {
+        "x": 880,
+        "y": 250,
+        "name": "Dachfläche"
+      },
+      {
+        "x": 256,
+        "y": 590,
+        "name": "LED-Beleuchtung",
+        "hinweis": "im Dachbereich, dimmbar"
+      },
+      {
+        "x": 540,
+        "y": 760,
+        "name": "Seitenpaneel",
+        "hinweis": "in warmer Kupferoptik"
+      }
+    ]
+  },
+  "einsatzgebiet": {
+    "titel": "Wir bauen im gesamten Ruhrgebiet",
+    "text": "Mit Sitz in Mülheim an der Ruhr sind wir kurzfristig in der ganzen Region vor Ort, für Beratung, Aufmaß und Montage.",
+    "button": "Einsatzgebiet im Detail"
+  },
+  "faq": {
+    "titel": "Bevor Sie anrufen",
+    "eintraege": [
+      {
+        "frage": "Ist eine Beratung vor Ort kostenlos?",
+        "antwort": "Ja. Wir schauen uns Terrasse, Carport-Stellplatz oder Fassade gemeinsam mit Ihnen an, nehmen Maß und besprechen Möglichkeiten, ohne Verkaufsdruck und ohne Kosten."
+      },
+      {
+        "frage": "Brauche ich für eine Terrassenüberdachung oder einen Carport eine Baugenehmigung?",
+        "antwort": "Das hängt von Größe, Grundstück und der jeweiligen Gemeinde ab. Wir prüfen das im persönlichen Beratungsgespräch für Ihr konkretes Vorhaben und sagen Ihnen ehrlich, was zu tun ist."
+      },
+      {
+        "frage": "Wie lange dauert die Montage?",
+        "antwort": "Das richtet sich nach Größe und Ausstattung. Nach dem Aufmaß erhalten Sie von uns einen realistischen Zeitrahmen für Fertigung und Montage."
+      },
+      {
+        "frage": "Liefern Sie auch außerhalb von Mülheim an der Ruhr?",
+        "antwort": "Ja, wir sind im gesamten Ruhrgebiet unterwegs, unter anderem in Essen, Oberhausen, Duisburg, Bottrop, Dinslaken, Gelsenkirchen, Bochum und Düsseldorf."
+      }
+    ]
+  },
+  "kontakt": {
+    "titel": "Lassen Sie uns über Ihr Projekt sprechen",
+    "text": "Rufen Sie an, schreiben Sie eine E-Mail oder nutzen Sie das Formular. Wir melden uns in der Regel innerhalb eines Werktags zurück."
+  }
+}

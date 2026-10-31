@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "titel": "Einsatzgebiet",
+  "gilt_fuer": [
+    "inhalt/seiten/einsatzgebiet.json"
+  ],
+  "felder": [
+    {
+      "schluessel": "name",
+      "label": "Name der Seite",
+      "typ": "text",
+      "hilfe": "Erscheint in Menü, Brotkrumen-Navigation und Fußzeile.",
+      "pflicht": true,
+      "max": 30
+    },
+    {
+      "schluessel": "seo",
+      "label": "Suchmaschinen und Vorschau",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "title",
+          "label": "Seitentitel",
+          "typ": "text",
+          "hilfe": "Erscheint im Browser-Tab und als Überschrift in Google. Empfohlen: bis ca. 60 Zeichen, wichtigstes Stichwort zuerst.",
+          "pflicht": true,
+          "max": 90
+        },
+        {
+          "schluessel": "beschreibung",
+          "label": "Beschreibung für Google",
+          "typ": "textarea",
+          "hilfe": "Kurzer Text unter dem Titel in den Suchergebnissen. Empfohlen: 120 bis 160 Zeichen. Platzhalter wie {{telefon}} und {{email}} sind möglich.",
+          "pflicht": true,
+          "max": 320
+        },
+        {
+          "schluessel": "og_aktiv",
+          "label": "Vorschau für soziale Netzwerke ausgeben",
+          "typ": "janein",
+          "hilfe": "Ja: Titel, Adresse (und ggf. Bild) für Facebook, WhatsApp usw. mitsenden.",
+          "pflicht": true
+        },
+        {
+          "schluessel": "og_beschreibung",
+          "label": "Beschreibung für soziale Netzwerke",
+          "typ": "text",
+          "hilfe": "Nur nötig, wenn die Vorschau einen eigenen kürzeren Text haben soll.",
+          "pflicht": false,
+          "max": 200
+        },
+        {
+          "schluessel": "og_bild",
+          "label": "Vorschaubild für soziale Netzwerke",
+          "typ": "bild",
+          "hilfe": "Es wird das Original-JPG des Fotos verwendet. Leer lassen = kein Vorschaubild.",
+          "pflicht": false,
+          "groesse": {
+            "breite": 1600,
+            "hoehe": 1200,
+            "seitenverhaeltnis": "4:3",
+            "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+          }
+        }
+      ]
+    },
+    {
+      "schluessel": "kopf",
+      "label": "Seitenkopf",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "h1",
+          "label": "Überschrift (H1)",
+          "typ": "text",
+          "hilfe": "Die Hauptüberschrift der Seite, nur einmal pro Seite.",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "lead",
+          "label": "Einleitung",
+          "typ": "textarea",
+          "hilfe": "Ein bis zwei Sätze unter der Überschrift.",
+          "pflicht": true,
+          "max": 320
+        }
+      ]
+    },
+    {
+      "schluessel": "staedte",
+      "label": "Städte und Karte",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "textarea",
+          "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+          "pflicht": true,
+          "max": 400,
+          "markup": true
+        },
+        {
+          "schluessel": "zusaetzlich",
+          "label": "Zusätzliche Städte nur auf dieser Seite",
+          "typ": "liste",
+          "hilfe": "Werden hinter den \"Weiteren Städten\" der globalen Angaben angezeigt, aber nicht in die Suchmaschinen-Daten übernommen.",
+          "pflicht": false,
+          "eintrag": {
+            "label": "Stadt",
+            "typ": "text",
+            "hilfe": "",
+            "max": 40
+          },
+          "min": 0,
+          "max": 8,
+          "eintrag_label": "Stadt"
+        }
+      ]
+    },
+    {
+      "schluessel": "referenzen_hinweis",
+      "label": "Hinweis auf Referenzen",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "textarea",
+          "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+          "pflicht": true,
+          "max": 400,
+          "markup": true
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "Führt zur Seite \"Referenzen\".",
+          "pflicht": true,
+          "max": 40
+        }
+      ]
+    },
+    {
+      "schluessel": "cta",
+      "label": "Abschlussband mit Anruf-Aufforderung",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 200
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "Der Knopf führt zur Kontaktseite.",
+          "pflicht": true,
+          "max": 40
+        }
+      ]
+    }
+  ],
+  "typ": "gruppe"
+}

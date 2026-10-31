@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "titel": "Startseite",
+  "gilt_fuer": [
+    "inhalt/seiten/startseite.json"
+  ],
+  "felder": [
+    {
+      "schluessel": "name",
+      "label": "Name der Seite",
+      "typ": "text",
+      "hilfe": "Erscheint in Menü, Brotkrumen-Navigation und Fußzeile.",
+      "pflicht": true,
+      "max": 30
+    },
+    {
+      "schluessel": "seo",
+      "label": "Suchmaschinen und Vorschau",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "title",
+          "label": "Seitentitel",
+          "typ": "text",
+          "hilfe": "Erscheint im Browser-Tab und als Überschrift in Google. Empfohlen: bis ca. 60 Zeichen, wichtigstes Stichwort zuerst.",
+          "pflicht": true,
+          "max": 90
+        },
+        {
+          "schluessel": "beschreibung",
+          "label": "Beschreibung für Google",
+          "typ": "textarea",
+          "hilfe": "Kurzer Text unter dem Titel in den Suchergebnissen. Empfohlen: 120 bis 160 Zeichen. Platzhalter wie {{telefon}} und {{email}} sind möglich.",
+          "pflicht": true,
+          "max": 320
+        },
+        {
+          "schluessel": "og_aktiv",
+          "label": "Vorschau für soziale Netzwerke ausgeben",
+          "typ": "janein",
+          "hilfe": "Ja: Titel, Adresse (und ggf. Bild) für Facebook, WhatsApp usw. mitsenden.",
+          "pflicht": true
+        },
+        {
+          "schluessel": "og_beschreibung",
+          "label": "Beschreibung für soziale Netzwerke",
+          "typ": "text",
+          "hilfe": "Nur nötig, wenn die Vorschau einen eigenen kürzeren Text haben soll.",
+          "pflicht": false,
+          "max": 200
+        },
+        {
+          "schluessel": "og_bild",
+          "label": "Vorschaubild für soziale Netzwerke",
+          "typ": "bild",
+          "hilfe": "Es wird das Original-JPG des Fotos verwendet. Leer lassen = kein Vorschaubild.",
+          "pflicht": false,
+          "groesse": {
+            "breite": 1600,
+            "hoehe": 1200,
+            "seitenverhaeltnis": "4:3",
+            "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+          }
+        }
+      ]
+    },
+    {
+      "schluessel": "hero",
+      "label": "Eingangsbereich (oben)",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "zeile1",
+          "label": "Überschrift, erste Zeile",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "zeile2",
+          "label": "Überschrift, zweite Zeile",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "unterzeile",
+          "label": "Überschrift, kleine Unterzeile",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 50
+        },
+        {
+          "schluessel": "lead",
+          "label": "Einleitung",
+          "typ": "textarea",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 320
+        },
+        {
+          "schluessel": "foto",
+          "label": "Großes Foto",
+          "typ": "gruppe",
+          "hilfe": "",
+          "pflicht": true,
+          "felder": [
+            {
+              "schluessel": "bild",
+              "label": "Foto",
+              "typ": "bild",
+              "hilfe": "",
+              "pflicht": true,
+              "groesse": {
+                "breite": 1600,
+                "hoehe": 1200,
+                "seitenverhaeltnis": "4:3",
+                "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+              }
+            },
+            {
+              "schluessel": "alt",
+              "label": "Bildbeschreibung",
+              "typ": "text",
+              "hilfe": "Beschreibt das Bild für Screenreader und Google. Leer lassen = Standardtext des Fotos aus der Bildliste.",
+              "pflicht": false,
+              "max": 200
+            }
+          ]
+        },
+        {
+          "schluessel": "massangabe",
+          "label": "Maßangabe im Foto",
+          "typ": "text",
+          "hilfe": "Beschriftung der Maßlinie im Foto, z. B. \"Breite nach Aufmaß\".",
+          "pflicht": true,
+          "max": 30
+        },
+        {
+          "schluessel": "datenblatt",
+          "label": "Drei Kurzangaben unter dem Foto",
+          "typ": "liste",
+          "hilfe": "Genau drei, daneben steht der Slogan.",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Zeile",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "label",
+                "label": "Bezeichnung",
+                "typ": "text",
+                "hilfe": "Kurzes Stichwort, z. B. \"Konstruktion\".",
+                "pflicht": true,
+                "max": 24
+              },
+              {
+                "schluessel": "wert",
+                "label": "Angabe",
+                "typ": "text",
+                "hilfe": "",
+                "pflicht": true,
+                "max": 80
+              }
+            ]
+          },
+          "min": 3,
+          "max": 3,
+          "eintrag_label": "Zeile"
+        }
+      ]
+    },
+    {
+      "schluessel": "leistungen",
+      "label": "Leistungs-Übersicht",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "einleitung",
+          "label": "Einleitung",
+          "typ": "textarea",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 240
+        },
+        {
+          "schluessel": "eintraege",
+          "label": "Leistungen",
+          "typ": "liste",
+          "hilfe": "Alle sechs Leistungen in der gewünschten Reihenfolge.",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Leistung",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "seite",
+                "label": "Leistungsseite",
+                "typ": "auswahl",
+                "hilfe": "Welche Leistungsseite verlinkt wird (Name und Zeichnung kommen von dort).",
+                "pflicht": true,
+                "optionen": [
+                  {
+                    "wert": "terrassenueberdachung",
+                    "label": "Terrassenüberdachung"
+                  },
+                  {
+                    "wert": "carport",
+                    "label": "Carport"
+                  },
+                  {
+                    "wert": "wintergarten",
+                    "label": "Wintergarten"
+                  },
+                  {
+                    "wert": "vordach",
+                    "label": "Vordach"
+                  },
+                  {
+                    "wert": "alu-zaun",
+                    "label": "Aluminiumzaun"
+                  },
+                  {
+                    "wert": "fliegengitter",
+                    "label": "Fliegengitter"
+                  }
+                ]
+              },
+              {
+                "schluessel": "text",
+                "label": "Kurztext",
+                "typ": "text",
+                "hilfe": "",
+                "pflicht": true,
+                "max": 140
+              }
+            ]
+          },
+          "min": 6,
+          "max": 6,
+          "eintrag_label": "Leistung"
+        }
+      ]
+    },
+    {
+      "schluessel": "handwerk",
+      "label": "Abschnitt \"Handwerk\"",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "absaetze",
+          "label": "Absätze",
+          "typ": "liste",
+          "hilfe": "",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Absatz",
+            "typ": "textarea",
+            "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+            "max": 400,
+            "markup": true
+          },
+          "min": 1,
+          "max": 4,
+          "eintrag_label": "Absatz"
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "Führt zur Seite \"Über uns\".",
+          "pflicht": true,
+          "max": 40
+        }
+      ]
+    },
+    {
+      "schluessel": "farbe",
+      "label": "RAL-Farbwähler",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "label",
+          "label": "Beschriftung über der Zeichnung",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 60
+        },
+        {
+          "schluessel": "zeichnung_beschreibung",
+          "label": "Beschreibung der Zeichnung (für Screenreader)",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 160
+        },
+        {
+          "schluessel": "farben",
+          "label": "Farben",
+          "typ": "liste",
+          "hilfe": "Die erste Farbe ist beim Öffnen vorgewählt.",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Farbe",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "code",
+                "label": "RAL-Nummer",
+                "typ": "text",
+                "hilfe": "z. B. \"RAL 7016\".",
+                "pflicht": true,
+                "max": 12,
+                "muster": "^RAL [0-9]{4}$"
+              },
+              {
+                "schluessel": "name",
+                "label": "Farbname",
+                "typ": "text",
+                "hilfe": "z. B. \"Anthrazitgrau\".",
+                "pflicht": true,
+                "max": 30
+              },
+              {
+                "schluessel": "hex",
+                "label": "Bildschirmfarbe",
+                "typ": "text",
+                "hilfe": "Näherungswert der Farbe: Raute und sechs Zeichen (0 bis 9 und A bis F), z. B. \"#383E42\".",
+                "pflicht": true,
+                "max": 7,
+                "muster": "^#[0-9A-Fa-f]{6}$"
+              }
+            ]
+          },
+          "min": 2,
+          "max": 12,
+          "eintrag_label": "Farbe"
+        },
+        {
+          "schluessel": "hinweis",
+          "label": "Hinweis unter den Farben",
+          "typ": "textarea",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 240
+        }
+      ]
+    },
+    {
+      "schluessel": "projekt",
+      "label": "Abschnitt \"Projekt\" mit nummerierten Bauteilen",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "foto",
+          "label": "Foto",
+          "typ": "gruppe",
+          "hilfe": "",
+          "pflicht": true,
+          "felder": [
+            {
+              "schluessel": "bild",
+              "label": "Foto",
+              "typ": "bild",
+              "hilfe": "",
+              "pflicht": true,
+              "groesse": {
+                "breite": 1600,
+                "hoehe": 1200,
+                "seitenverhaeltnis": "4:3",
+                "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+              }
+            },
+            {
+              "schluessel": "alt",
+              "label": "Bildbeschreibung",
+              "typ": "text",
+              "hilfe": "Beschreibt das Bild für Screenreader und Google. Leer lassen = Standardtext des Fotos aus der Bildliste.",
+              "pflicht": false,
+              "max": 200
+            }
+          ]
+        },
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "textarea",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 240
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "Führt zur Seite \"Referenzen\".",
+          "pflicht": true,
+          "max": 40
+        },
+        {
+          "schluessel": "markierungen",
+          "label": "Nummerierte Bauteile im Foto",
+          "typ": "liste",
+          "hilfe": "Die Reihenfolge bestimmt die Nummer (1, 2, 3 ...).",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Bauteil",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "x",
+                "label": "Position von links",
+                "typ": "zahl",
+                "hilfe": "Punkt im Foto, Bezugsgröße 1600 x 1200: 0 = ganz links, 1600 = ganz rechts.",
+                "pflicht": true,
+                "min": 0,
+                "max": 1600
+              },
+              {
+                "schluessel": "y",
+                "label": "Position von oben",
+                "typ": "zahl",
+                "hilfe": "0 = ganz oben, 1200 = ganz unten.",
+                "pflicht": true,
+                "min": 0,
+                "max": 1200
+              },
+              {
+                "schluessel": "name",
+                "label": "Bezeichnung",
+                "typ": "text",
+                "hilfe": "",
+                "pflicht": true,
+                "max": 40
+              },
+              {
+                "schluessel": "hinweis",
+                "label": "Zusatz in kleiner Schrift",
+                "typ": "text",
+                "hilfe": "Optional, z. B. \"im Dachbereich, dimmbar\".",
+                "pflicht": false,
+                "max": 60
+              }
+            ]
+          },
+          "min": 1,
+          "max": 8,
+          "eintrag_label": "Bauteil"
+        }
+      ]
+    },
+    {
+      "schluessel": "einsatzgebiet",
+      "label": "Abschnitt \"Einsatzgebiet\"",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "textarea",
+          "hilfe": "Die Städte stammen aus den globalen Angaben.",
+          "pflicht": true,
+          "max": 240
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "Führt zur Seite \"Einsatzgebiet\".",
+          "pflicht": true,
+          "max": 40
+        }
+      ]
+    },
+    {
+      "schluessel": "faq",
+      "label": "Fragen und Antworten",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "eintraege",
+          "label": "Fragen",
+          "typ": "liste",
+          "hilfe": "Die erste Frage ist beim Öffnen der Seite aufgeklappt.",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Frage",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "frage",
+                "label": "Frage",
+                "typ": "text",
+                "hilfe": "",
+                "pflicht": true,
+                "max": 140
+              },
+              {
+                "schluessel": "antwort",
+                "label": "Antwort",
+                "typ": "textarea",
+                "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+                "pflicht": true,
+                "max": 500,
+                "markup": true
+              }
+            ]
+          },
+          "min": 1,
+          "max": 10,
+          "eintrag_label": "Frage"
+        }
+      ]
+    },
+    {
+      "schluessel": "kontakt",
+      "label": "Abschnitt \"Kontakt\"",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "textarea",
+          "hilfe": "Telefon, E-Mail, Adresse und Formular kommen aus den globalen Angaben.",
+          "pflicht": true,
+          "max": 240
+        }
+      ]
+    }
+  ],
+  "typ": "gruppe"
+}

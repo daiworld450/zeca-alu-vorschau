@@ -1,0 +1,104 @@
+  <section class="hero" aria-labelledby="h1">
+    <div class="sheet">
+      <h1 id="h1"><span class="l">{{hero.zeile1}}</span> <span class="l">{{hero.zeile2}}</span> <span class="h1-sub">{{hero.unterzeile}}</span></h1>
+      <div class="hero-sub">
+        <p class="lead">{{hero.lead}}</p>
+        <div class="hero-act"><a class="btn" href="{{link.kontakt}}">{{texte.beratung_button}} {{> pfeil}}</a><a class="act-tel" href="tel:{{tel.tel}}">{{tel.anzeige}}</a></div>
+      </div>
+      <figure class="plate">
+        <div class="plate-frame">
+          <div class="plate-clip">{{hero.foto.img}}</div>
+          <div class="dim" aria-hidden="true">
+            <span class="ext" style="--x:270"></span><span class="ext" style="--x:1002"></span>
+            <span class="dline" style="--x1:270;--x2:1002"><span class="dtxt label">{{hero.massangabe}}</span></span>
+          </div>
+        </div>
+      </figure>
+      <div class="titleblock">
+        {{#jede hero.datenblatt}}<div class="tb-cell"><span class="label">{{label}}</span><span class="tb-val">{{wert}}</span></div>
+        {{/jede}}<div class="tb-cell tb-brand"><p class="slogan">{{firma.slogan}}.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="leistungen">
+    <div class="sheet">
+      <div class="sec-head">
+        <h2>{{leistungen.titel}}</h2>
+        <p>{{leistungen.einleitung}}</p>
+      </div>
+      <ul class="index">
+          {{#jede leistungen.eintraege}}<li><a href="{{href}}">{{icon}}<span class="row-title">{{name}}</span><span class="row-text">{{text}}</span><span class="row-go">{{> pfeil}}</span></a></li>
+          {{/jede}}</ul>
+    </div>
+  </section>
+
+  <section class="sec farbe" data-farbe>
+    <div class="sheet">
+      <div class="split">
+        <div class="prose">
+          <h2>{{handwerk.titel}}</h2>
+          {{#jede handwerk.absaetze}}<p>{{.}}</p>
+          {{/jede}}<a class="btn btn-line" href="{{link.ueber-uns}}">{{handwerk.button}} {{> pfeil}}</a>
+        </div>
+        <div>
+          <div class="farbe-head"><span class="label">{{farbe.label}}</span><span class="ral-name" data-ral-out aria-live="polite">{{farbe.standard}}</span></div>
+          <div class="field"><div class="drw-wrap">{{farbe.zeichnung}}</div></div>
+          <div class="swatches" role="radiogroup" aria-label="RAL-Farbe wählen" data-ral>{{#jede farbe.farben}}<button class="sw" type="button" role="radio" aria-checked="{{checked}}" tabindex="{{tab}}" data-hex="{{hex}}" data-name="{{code}} {{name}}" style="--c:{{hex}}"><span class="sw-chip"></span><span class="sw-t">{{code}}<small>{{name}}</small></span></button>{{/jede}}</div>
+          <p class="farbe-note">{{farbe.hinweis}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec bauteile" aria-labelledby="projekt-h">
+    <div class="sheet">
+      <figure class="plate" style="margin-bottom:0">
+        <div class="plate-frame">
+          <div class="plate-clip">{{projekt.foto.img}}</div>
+          {{#jede projekt.markierungen}}<span class="pin" data-n="{{@nr}}" style="--x:{{x}};--y:{{y}};--i:{{@index}}" aria-hidden="true"><span>{{@nr}}</span></span>{{/jede}}
+        </div>
+      </figure>
+      <div class="bauteile-text">
+        <div class="prose">
+          <h2 id="projekt-h">{{projekt.titel}}</h2>
+          <p>{{projekt.text}}</p>
+          <a class="btn btn-line" href="{{link.referenzen}}">{{projekt.button}} {{> pfeil}}</a>
+        </div>
+        <ul class="legend">{{#jede projekt.markierungen}}<li><button class="leg" type="button" data-n="{{@nr}}" aria-pressed="false"><span class="n" aria-hidden="true">{{@nr}}</span><span>{{name}}{{#wenn hinweis}}<small>{{hinweis}}</small>{{/wenn}}</span></button></li>{{/jede}}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band on-dark">
+    <div class="sheet">
+      <div class="band-grid">
+        <div class="sec-head">
+          <h2>{{einsatzgebiet.titel}}</h2>
+          <p>{{einsatzgebiet.text}}</p>
+          <a class="btn" href="{{link.einsatzgebiet}}">{{einsatzgebiet.button}} {{> pfeil}}</a>
+        </div>
+        {{> orte}}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sheet">
+      <h2>{{faq.titel}}</h2>
+      {{> faq}}
+    </div>
+  </section>
+
+  <section class="sec" id="kontakt">
+    <div class="sheet">
+      <div class="split rev" style="align-items:start">
+        <div>
+          <h2>{{kontakt.titel}}</h2>
+          <p style="margin-top:clamp(16px,2vw,28px)">{{kontakt.text}}</p>
+          {{> kontaktdaten}}
+        </div>
+        {{> formular}}
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,29 @@
+{
+  "name": "Einsatzgebiet",
+  "seo": {
+    "title": "Einsatzgebiet Ruhrgebiet | ZeCa-Alu Mülheim an der Ruhr",
+    "beschreibung": "ZeCa-Alu baut Terrassenüberdachungen, Carports, Wintergärten und mehr im gesamten Ruhrgebiet: Mülheim an der Ruhr, Essen, Oberhausen, Duisburg, Bottrop, Dinslaken, Gelsenkirchen, Bochum und Düsseldorf.",
+    "og_aktiv": false
+  },
+  "kopf": {
+    "h1": "Zu Hause im gesamten Ruhrgebiet",
+    "lead": "Von unserem Sitz in Mülheim an der Ruhr aus sind wir kurzfristig in der ganzen Region vor Ort, für Beratung, Aufmaß und Montage von Terrassenüberdachung, Carport, Wintergarten und mehr."
+  },
+  "staedte": {
+    "titel": "Diese Städte gehören zu unserem Einsatzgebiet",
+    "text": "Unser Sitz liegt in Mülheim an der Ruhr. Von hier aus erreichen wir die Nachbarstädte im Ruhrgebiet meist innerhalb kurzer Fahrzeit. Ist Ihre Stadt nicht aufgeführt, fragen Sie einfach nach: oft ist auch ein größerer Radius kein Problem.",
+    "zusaetzlich": [
+      "Krefeld"
+    ]
+  },
+  "referenzen_hinweis": {
+    "titel": "Referenzen aus Ihrer Stadt folgen",
+    "text": "Wir sind ein junger Betrieb. Mit jedem abgeschlossenen Projekt wächst unsere Referenzliste je Stadt. Aktuell zeigen wir unser Referenzprojekt aus Mülheim an der Ruhr; weitere Städte kommen laufend dazu.",
+    "button": "Referenzen ansehen"
+  },
+  "cta": {
+    "titel": "Projekt in Ihrer Stadt geplant?",
+    "text": "Rufen Sie an oder schreiben Sie uns. Wir sagen Ihnen, wie schnell wir bei Ihnen sein können.",
+    "button": "Jetzt anfragen"
+  }
+}

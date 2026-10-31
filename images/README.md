@@ -1,5 +1,7 @@
 # Bildbedarf ZeCa-Alu
 
+> Neue Fotos lädt der Inhaber in der Verwaltung hoch (Ansicht „Fotos“, siehe `ADMIN-ANLEITUNG.md`). Die Hinweise zum Einbauen in HTML-Dateien weiter unten stammen aus der Zeit vor dem Generator.
+
 ## Vorhanden (echt, von der alten Seite übernommen)
 - `bestand/terrasse-doppelhaus-1.jpg`, `bestand/terrasse-doppelhaus-2.jpg` – Terrassenüberdachung Doppelhaus, Mülheim an der Ruhr
 - `bestand/logo-original.jpg` – Firmenlogo (907×144)

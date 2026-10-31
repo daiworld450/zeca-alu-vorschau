@@ -1,0 +1,11 @@
+{
+  "name": "Impressum",
+  "seo": {
+    "title": "Impressum | ZeCa-Alu",
+    "beschreibung": "Impressum von ZeCa-Alu, Inhaber Zemin Yüregil, Mülheim an der Ruhr.",
+    "og_aktiv": false
+  },
+  "kopf": {
+    "h1": "Impressum"
+  }
+}

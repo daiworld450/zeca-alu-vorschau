@@ -1,0 +1,53 @@
+  <section class="kopf">
+    <div class="sheet">
+      {{> brotkrumen}}
+      <h1>{{kopf.h1}}</h1>
+      <div class="kopf-top">
+        <p class="lead">{{kopf.lead}}</p>
+        <div class="cta-row"><a class="btn" href="{{link.kontakt}}">{{texte.beratung_button}} {{> pfeil}}</a><a class="btn btn-line" href="tel:{{tel.tel}}">{{tel.anzeige}}</a></div>
+      </div>
+      <div class="kopf-bot">
+        <div class="field">{{zeichnung}}</div>
+        <div class="datenblatt">{{#jede kopf.datenblatt}}<div class="tb-cell"><span class="label">{{label}}</span><span class="tb-val">{{wert}}</span></div>{{/jede}}</div>
+      </div>
+      <p class="cap">{{kopf.zeichnung_hinweis}}</p>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="sheet">
+      <div class="split{{#wenn text.foto}}{{#sonst}} single{{/wenn}}">
+        <div class="prose"><h2>{{text.titel}}</h2>{{#jede text.absaetze}}<p>{{.}}</p>{{/jede}}</div>
+        {{#wenn text.foto}}<figure><div class="photo">{{text.foto.img}}</div>{{#wenn text.foto.bildunterschrift}}<figcaption class="cap">{{text.foto.bildunterschrift}}</figcaption>{{/wenn}}</figure>{{/wenn}}
+      </div>
+    </div>
+  </section>
+  {{#wenn galerie}}<section class="sec">
+    <div class="sheet">
+      <div class="sec-head"><h2>{{galerie.titel}}</h2>
+      <p>{{galerie.text}}</p></div>
+      <div class="gal">
+        {{#jede galerie.fotos}}<figure><div class="photo">{{img}}</div>{{#wenn bildunterschrift}}<figcaption class="cap">{{bildunterschrift}}</figcaption>{{/wenn}}</figure>
+        {{/jede}}</div>
+    </div>
+  </section>
+  {{/wenn}}<section class="sec">
+    <div class="sheet">
+      <h2>{{schritte.titel}}</h2>
+      <ol class="chain" style="--n:{{schritte.anzahl}}">{{#jede schritte.eintraege}}<li><span class="label">Schritt {{@nr}}</span><h3>{{titel}}</h3><p>{{text}}</p></li>{{/jede}}</ol>
+    </div>
+  </section>
+  {{#wenn fakten}}<section class="sec">
+    <div class="sheet">
+      <h2>{{fakten.titel}}</h2>
+      <dl class="facts">
+        {{#jede fakten.eintraege}}<div><dt>{{begriff}}</dt><dd>{{text}}</dd></div>
+        {{/jede}}</dl>
+    </div>
+  </section>
+  {{/wenn}}<section class="sec">
+    <div class="sheet">
+      <h2>{{faq.titel}}</h2>
+      {{> faq}}
+    </div>
+  </section>
+  {{> cta_band}}

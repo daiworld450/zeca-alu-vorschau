@@ -1,0 +1,15 @@
+{
+  "name": "Kontakt",
+  "seo": {
+    "title": "Kontakt | ZeCa-Alu Mülheim an der Ruhr",
+    "beschreibung": "Kostenlose Beratung anfordern: ZeCa-Alu in Mülheim an der Ruhr, Telefon {{telefon}}, {{email}}. Terrassenüberdachung, Carport, Wintergarten und mehr.",
+    "og_aktiv": false
+  },
+  "kopf": {
+    "h1": "Lassen Sie uns über Ihr Projekt sprechen",
+    "lead": "Rufen Sie an, schreiben Sie eine E-Mail oder nutzen Sie das Formular. Wir melden uns in der Regel innerhalb eines Werktags zurück."
+  },
+  "kontaktblock": {
+    "titel": "So erreichen Sie uns"
+  }
+}

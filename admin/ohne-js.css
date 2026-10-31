@@ -1,0 +1,2 @@
+/* Wird nur geladen, wenn JavaScript aus ist (<noscript> in index.html): zeigt den Hinweis, dass die Verwaltung JavaScript braucht. */
+html{visibility:visible}

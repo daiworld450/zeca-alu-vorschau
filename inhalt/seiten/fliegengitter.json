@@ -1,0 +1,79 @@
+{
+  "name": "Fliegengitter",
+  "seo": {
+    "title": "Fliegengitter Mülheim an der Ruhr & Ruhrgebiet | ZeCa-Alu",
+    "beschreibung": "Fliegengitter nach Maß für Fenster und Türen – Insektenschutz von ZeCa-Alu, montiert in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "og_aktiv": true,
+    "breadcrumb_schema": false
+  },
+  "kopf": {
+    "h1": "Fliegengitter nach Maß",
+    "lead": "Insektenschutz für Fenster und Türen, unauffällig und funktional, von ZeCa-Alu gefertigt und montiert im gesamten Ruhrgebiet.",
+    "zeichnung_beschreibung": "Zeichnung eines Fliegengitters mit Aluminiumrahmen und Gewebe, Maße nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Anfertigung",
+        "wert": "Nach Aufmaß"
+      },
+      {
+        "label": "Varianten",
+        "wert": "Spannrahmen, Drehrahmen, Schiebeanlage"
+      },
+      {
+        "label": "Passform",
+        "wert": "Exakt nach Maß Ihrer Öffnungen"
+      },
+      {
+        "label": "Montage",
+        "wert": "Ohne bauliche Eingriffe"
+      }
+    ],
+    "zeichnung_hinweis": "Prinzipzeichnung. Ausführung und Maße nach Aufmaß am Objekt."
+  },
+  "text": {
+    "titel": "Für jedes Fenster und jede Tür die passende Lösung",
+    "absaetze": [
+      "Ob Spannrahmen für Fenster, Drehtür oder Schiebeanlage für die Terrassentür: Wir fertigen Fliegengitter exakt nach Maß Ihrer Fenster- und Türöffnungen, auch für ungewöhnliche Formate.",
+      "Besonders praktisch: Wird eine Terrassenüberdachung oder ein Wintergarten montiert, lässt sich das passende Fliegengitter direkt mitplanen."
+    ]
+  },
+  "schritte": {
+    "titel": "In drei Schritten zum Fliegengitter",
+    "eintraege": [
+      {
+        "titel": "Aufmaß",
+        "text": "Wir vermessen Ihre Fenster und Türen vor Ort."
+      },
+      {
+        "titel": "Fertigung",
+        "text": "Rahmen und Gewebe werden passgenau angefertigt."
+      },
+      {
+        "titel": "Montage",
+        "text": "Meist innerhalb kurzer Zeit montiert, ohne bauliche Eingriffe."
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Fliegengitter: Fragen & Antworten",
+    "eintraege": [
+      {
+        "frage": "Welche Varianten gibt es?",
+        "antwort": "Spannrahmen für Fenster, Drehrahmen und Schiebeanlagen für Türen. Wir beraten Sie zur passenden Lösung je Öffnung."
+      },
+      {
+        "frage": "Passt das auch bei ungewöhnlichen Fenstergrößen?",
+        "antwort": "Ja, wir fertigen jedes Gitter nach individuellem Aufmaß."
+      },
+      {
+        "frage": "Wie reinige ich das Gewebe?",
+        "antwort": "Meist reicht Absaugen oder vorsichtiges Abwischen mit einem feuchten Tuch."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Ruhe vor Insekten gewünscht?",
+    "text": "Wir vermessen Ihre Fenster und Türen und machen ein unverbindliches Angebot.",
+    "button": "Jetzt Beratung anfordern"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Referenzen",
+  "seo": {
+    "title": "Referenzen | ZeCa-Alu Terrassenüberdachung & Carport im Ruhrgebiet",
+    "beschreibung": "Referenzprojekte von ZeCa-Alu: Terrassenüberdachungen, Carports und mehr im Ruhrgebiet. Echte Baustellenfotos, echte Kunden.",
+    "og_aktiv": false
+  },
+  "kopf": {
+    "h1": "Unser erstes Projekt im Detail",
+    "lead": "ZeCa-Alu ist ein junger Betrieb. Deshalb zeigen wir hier unser erstes Projekt im Detail, mit echten Baustellenfotos statt Katalogbildern. Weitere Projekte ergänzen wir, sobald sie abgeschlossen sind."
+  },
+  "projekte": [
+    {
+      "titel": "Doppelhaus",
+      "ort": "Mülheim an der Ruhr",
+      "beschreibung": "Terrassenüberdachung mit geschlossenen Seitenpaneelen in warmer Kupferoptik, integrierten Geräteschränken und dimmbarer LED-Beleuchtung im Dachbereich.",
+      "fotos": [
+        {
+          "bild": "terrasse-doppelhaus-1",
+          "alt": "Terrassenüberdachung Doppelhaus Mülheim an der Ruhr, Gesamtansicht bei Dämmerung",
+          "bildunterschrift": "Gesamtansicht, Mülheim an der Ruhr"
+        },
+        {
+          "bild": "terrasse-doppelhaus-2",
+          "alt": "Terrassenüberdachung Doppelhaus Mülheim an der Ruhr, Detail Konstruktion und Beleuchtung",
+          "bildunterschrift": "Detail Konstruktion & LED"
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "titel": "Ihr Projekt könnte hier stehen",
+    "text": "Lassen Sie uns über Ihre Idee sprechen, kostenlos und unverbindlich.",
+    "button": "Jetzt anfragen"
+  }
+}

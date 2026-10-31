@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "titel": "Über uns",
+  "gilt_fuer": [
+    "inhalt/seiten/ueber-uns.json"
+  ],
+  "felder": [
+    {
+      "schluessel": "name",
+      "label": "Name der Seite",
+      "typ": "text",
+      "hilfe": "Erscheint in Menü, Brotkrumen-Navigation und Fußzeile.",
+      "pflicht": true,
+      "max": 30
+    },
+    {
+      "schluessel": "seo",
+      "label": "Suchmaschinen und Vorschau",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "title",
+          "label": "Seitentitel",
+          "typ": "text",
+          "hilfe": "Erscheint im Browser-Tab und als Überschrift in Google. Empfohlen: bis ca. 60 Zeichen, wichtigstes Stichwort zuerst.",
+          "pflicht": true,
+          "max": 90
+        },
+        {
+          "schluessel": "beschreibung",
+          "label": "Beschreibung für Google",
+          "typ": "textarea",
+          "hilfe": "Kurzer Text unter dem Titel in den Suchergebnissen. Empfohlen: 120 bis 160 Zeichen. Platzhalter wie {{telefon}} und {{email}} sind möglich.",
+          "pflicht": true,
+          "max": 320
+        },
+        {
+          "schluessel": "og_aktiv",
+          "label": "Vorschau für soziale Netzwerke ausgeben",
+          "typ": "janein",
+          "hilfe": "Ja: Titel, Adresse (und ggf. Bild) für Facebook, WhatsApp usw. mitsenden.",
+          "pflicht": true
+        },
+        {
+          "schluessel": "og_beschreibung",
+          "label": "Beschreibung für soziale Netzwerke",
+          "typ": "text",
+          "hilfe": "Nur nötig, wenn die Vorschau einen eigenen kürzeren Text haben soll.",
+          "pflicht": false,
+          "max": 200
+        },
+        {
+          "schluessel": "og_bild",
+          "label": "Vorschaubild für soziale Netzwerke",
+          "typ": "bild",
+          "hilfe": "Es wird das Original-JPG des Fotos verwendet. Leer lassen = kein Vorschaubild.",
+          "pflicht": false,
+          "groesse": {
+            "breite": 1600,
+            "hoehe": 1200,
+            "seitenverhaeltnis": "4:3",
+            "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+          }
+        }
+      ]
+    },
+    {
+      "schluessel": "kopf",
+      "label": "Seitenkopf",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "h1",
+          "label": "Überschrift (H1)",
+          "typ": "text",
+          "hilfe": "Die Hauptüberschrift der Seite, nur einmal pro Seite.",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "lead",
+          "label": "Einleitung",
+          "typ": "textarea",
+          "hilfe": "Ein bis zwei Sätze unter der Überschrift.",
+          "pflicht": true,
+          "max": 320
+        }
+      ]
+    },
+    {
+      "schluessel": "text",
+      "label": "Textabschnitt",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "absaetze",
+          "label": "Absätze",
+          "typ": "liste",
+          "hilfe": "",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Absatz",
+            "typ": "textarea",
+            "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+            "max": 600,
+            "markup": true
+          },
+          "min": 1,
+          "max": 4,
+          "eintrag_label": "Absatz"
+        },
+        {
+          "schluessel": "foto",
+          "label": "Foto neben dem Text",
+          "typ": "gruppe",
+          "hilfe": "",
+          "pflicht": true,
+          "felder": [
+            {
+              "schluessel": "bild",
+              "label": "Foto",
+              "typ": "bild",
+              "hilfe": "",
+              "pflicht": true,
+              "groesse": {
+                "breite": 1600,
+                "hoehe": 1200,
+                "seitenverhaeltnis": "4:3",
+                "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+              }
+            },
+            {
+              "schluessel": "alt",
+              "label": "Bildbeschreibung",
+              "typ": "text",
+              "hilfe": "Beschreibt das Bild für Screenreader und Google. Leer lassen = Standardtext des Fotos aus der Bildliste.",
+              "pflicht": false,
+              "max": 200
+            },
+            {
+              "schluessel": "bildunterschrift",
+              "label": "Bildunterschrift",
+              "typ": "text",
+              "hilfe": "Kurzer Text unter dem Foto. Leer lassen = keine Unterschrift.",
+              "pflicht": false,
+              "max": 160
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "schluessel": "werte",
+      "label": "Worauf Sie sich verlassen können",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 70
+        },
+        {
+          "schluessel": "eintraege",
+          "label": "Punkte",
+          "typ": "liste",
+          "hilfe": "",
+          "pflicht": true,
+          "eintrag": {
+            "label": "Punkt",
+            "typ": "gruppe",
+            "hilfe": "",
+            "felder": [
+              {
+                "schluessel": "titel",
+                "label": "Titel",
+                "typ": "text",
+                "hilfe": "",
+                "pflicht": true,
+                "max": 50
+              },
+              {
+                "schluessel": "text",
+                "label": "Beschreibung",
+                "typ": "textarea",
+                "hilfe": "Erlaubtes Markup: <strong>fett</strong>, <em>kursiv</em>, <a href=\"/seite/\">Link</a>. Alles andere wird als Text angezeigt.",
+                "pflicht": true,
+                "max": 200,
+                "markup": true
+              }
+            ]
+          },
+          "min": 1,
+          "max": 6,
+          "eintrag_label": "Punkt"
+        }
+      ]
+    },
+    {
+      "schluessel": "cta",
+      "label": "Abschlussband mit Anruf-Aufforderung",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "titel",
+          "label": "Überschrift",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 80
+        },
+        {
+          "schluessel": "text",
+          "label": "Text",
+          "typ": "text",
+          "hilfe": "",
+          "pflicht": true,
+          "max": 200
+        },
+        {
+          "schluessel": "button",
+          "label": "Beschriftung des Knopfs",
+          "typ": "text",
+          "hilfe": "Der Knopf führt zur Kontaktseite.",
+          "pflicht": true,
+          "max": 40
+        }
+      ]
+    }
+  ],
+  "typ": "gruppe"
+}

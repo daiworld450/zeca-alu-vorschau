@@ -1,0 +1,19 @@
+{
+  "ordner": "images/bestand",
+  "bilder": [
+    {
+      "name": "terrasse-doppelhaus-1",
+      "alt": "Realisierte Terrassenüberdachung von ZeCa-Alu an einem Doppelhaus in Mülheim an der Ruhr, Abenddämmerung",
+      "original": "terrasse-doppelhaus-1.jpg"
+    },
+    {
+      "name": "terrasse-doppelhaus-2",
+      "alt": "Terrassenüberdachung Doppelhaus Mülheim an der Ruhr, Detailansicht der Konstruktion mit LED-Beleuchtung und Sichtschutz",
+      "original": "terrasse-doppelhaus-2.jpg"
+    }
+  ],
+  "logo": {
+    "datei": "logo.webp",
+    "alt": "ZeCa-Alu"
+  }
+}

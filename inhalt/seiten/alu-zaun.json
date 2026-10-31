@@ -1,0 +1,87 @@
+{
+  "name": "Aluminiumzaun",
+  "seo": {
+    "title": "Aluminiumzaun Mülheim an der Ruhr & Ruhrgebiet | ZeCa-Alu",
+    "beschreibung": "Alu-Zaun nach Maß: langlebige, pflegearme Einfriedung für Grundstück und Garten – geplant und montiert von ZeCa-Alu in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "og_aktiv": true,
+    "breadcrumb_schema": false
+  },
+  "kopf": {
+    "h1": "Aluminiumzaun nach Maß",
+    "lead": "Langlebige, formstabile Einfriedung für Grundstück und Garten, von ZeCa-Alu geplant und montiert in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "zeichnung_beschreibung": "Zeichnung eines Aluminiumzauns mit Pfosten, Riegeln und Stäben, Maße nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Anfertigung",
+        "wert": "Nach Aufmaß"
+      },
+      {
+        "label": "Bauart",
+        "wert": "Sichtschutz oder Staketenzaun"
+      },
+      {
+        "label": "Pflege",
+        "wert": "Kein Streichen, kein Rosten"
+      },
+      {
+        "label": "Zubehör",
+        "wert": "Tore und Türen bei Bedarf"
+      }
+    ],
+    "zeichnung_hinweis": "Prinzipzeichnung. Ausführung und Maße nach Aufmaß am Objekt."
+  },
+  "text": {
+    "titel": "Sichtschutz oder klassischer Gartenzaun",
+    "absaetze": [
+      "Ob geschlossene Sichtschutzelemente, ein klassischer Staketenzaun oder eine Kombination aus beidem: Wir fertigen den Zaun nach Ihren Maßen, inklusive Toren und Türen bei Bedarf.",
+      "Die Pulverbeschichtung ist in nahezu jedem RAL-Ton möglich. So fügt sich der Zaun farblich in Fassade, Fenster oder Terrassenüberdachung ein."
+    ]
+  },
+  "schritte": {
+    "titel": "In vier Schritten zum fertigen Zaun",
+    "eintraege": [
+      {
+        "titel": "Beratung & Aufmaß",
+        "text": "Wir nehmen die Grundstücksgrenze auf und besprechen Höhe und Optik."
+      },
+      {
+        "titel": "Planung & Angebot",
+        "text": "Zaunart, Farbe, Tore und Türen werden festgelegt."
+      },
+      {
+        "titel": "Fertigung",
+        "text": "Die Elemente werden nach Maß gefertigt."
+      },
+      {
+        "titel": "Montage",
+        "text": "Fundamentierung und Montage vor Ort, sauber und termintreu."
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Aluminiumzaun: Fragen & Antworten",
+    "eintraege": [
+      {
+        "frage": "Wie hoch darf ein Zaun ohne Genehmigung sein?",
+        "antwort": "Das regeln die Landesbauordnung und teils die jeweilige Gemeinde unterschiedlich. Wir prüfen das für Ihr Grundstück im Beratungsgespräch."
+      },
+      {
+        "frage": "Muss ich meinen Nachbarn informieren?",
+        "antwort": "Bei Grenzbebauung ist eine Abstimmung mit dem Nachbarn sinnvoll und oft rechtlich vorgeschrieben. Wir beraten Sie dazu ehrlich, ersetzen aber keine Rechtsberatung im Streitfall."
+      },
+      {
+        "frage": "Wie pflegeintensiv ist ein Alu-Zaun?",
+        "antwort": "Sehr gering: kein Streichen, kein Rosten, gelegentliches Abwischen reicht aus."
+      },
+      {
+        "frage": "Sind Tore und Schiebetore möglich?",
+        "antwort": "Ja, wir planen Tore und Türen passend zum Zaun, auf Wunsch auch elektrisch angetrieben."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Neuer Zaun für Ihr Grundstück?",
+    "text": "Kostenlose Beratung vor Ort. Wir vermessen und beraten unverbindlich.",
+    "button": "Jetzt Beratung anfordern"
+  }
+}

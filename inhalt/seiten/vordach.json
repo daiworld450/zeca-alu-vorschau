@@ -1,0 +1,88 @@
+{
+  "name": "Vordach",
+  "seo": {
+    "title": "Vordach Mülheim an der Ruhr & Ruhrgebiet | ZeCa-Alu",
+    "beschreibung": "Vordächer aus Aluminium für den Hauseingang – nach Maß geplant und montiert von ZeCa-Alu in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "og_aktiv": true,
+    "breadcrumb_schema": false
+  },
+  "kopf": {
+    "h1": "Vordach für den Hauseingang",
+    "lead": "Schutz vor Regen und Schnee direkt an der Haustür, dezent oder als gestalterischer Akzent. ZeCa-Alu plant und montiert Vordächer im gesamten Ruhrgebiet.",
+    "zeichnung_beschreibung": "Zeichnung eines Vordachs aus Aluminium über einer Haustür, Maße nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Anfertigung",
+        "wert": "Nach Aufmaß"
+      },
+      {
+        "label": "Konstruktion",
+        "wert": "Aluminium"
+      },
+      {
+        "label": "Dach",
+        "wert": "Glas oder Stegplatten"
+      },
+      {
+        "label": "Farbe",
+        "wert": "Pulverbeschichtung, nahezu jeder RAL-Ton"
+      }
+    ],
+    "zeichnung_hinweis": "Prinzipzeichnung. Ausführung und Maße nach Aufmaß am Objekt."
+  },
+  "text": {
+    "titel": "Klein im Format, groß im Nutzen",
+    "absaetze": [
+      "Ein Vordach schützt den Eingangsbereich vor Nässe und hält Laub und Schnee von der Haustür fern. Wir fertigen die Konstruktion aus Aluminium, mit Dach aus Glas oder Stegplatten, passend zu Fenstern und Fassade.",
+      "Auch als Ergänzung zu bestehenden Fassaden oder in Kombination mit einer neuen Haustür ist ein Vordach schnell realisiert, meist ohne größeren baulichen Aufwand."
+    ],
+    "foto": {
+      "bild": "terrasse-doppelhaus-1",
+      "alt": "Aluminium-Konstruktion von ZeCa-Alu, wie sie in ähnlicher Bauweise auch bei Vordächern zum Einsatz kommt",
+      "bildunterschrift": "Aluminium-Konstruktion von ZeCa-Alu, wie sie in ähnlicher Bauweise auch bei Vordächern zum Einsatz kommt."
+    }
+  },
+  "schritte": {
+    "titel": "In vier Schritten zum fertigen Vordach",
+    "eintraege": [
+      {
+        "titel": "Beratung & Aufmaß",
+        "text": "Wir schauen uns Eingangssituation und Fassade an."
+      },
+      {
+        "titel": "Planung & Angebot",
+        "text": "Größe, Material und Farbe werden abgestimmt."
+      },
+      {
+        "titel": "Fertigung",
+        "text": "Die Konstruktion wird nach Maß gefertigt."
+      },
+      {
+        "titel": "Montage",
+        "text": "Meist an einem Tag montiert, sauber und termintreu."
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Vordach: Fragen & Antworten",
+    "eintraege": [
+      {
+        "frage": "Wie lange dauert die Montage eines Vordachs?",
+        "antwort": "Bei den meisten Standardgrößen ist die Montage in ein bis zwei Tagen abgeschlossen."
+      },
+      {
+        "frage": "Passt das Vordach zu meiner Fassade?",
+        "antwort": "Ja, dank Pulverbeschichtung in nahezu jedem RAL-Ton lässt sich das Vordach farblich an Fenster, Türen oder Fassade anpassen."
+      },
+      {
+        "frage": "Brauche ich für ein Vordach eine Genehmigung?",
+        "antwort": "Kleine Vordächer sind häufig genehmigungsfrei, das hängt aber von Größe und Gemeinde ab. Wir klären das im Beratungsgespräch."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Ihr Eingang verdient mehr Schutz?",
+    "text": "Kostenlose Beratung. Wir zeigen Ihnen passende Lösungen für Ihre Haustür.",
+    "button": "Jetzt Beratung anfordern"
+  }
+}

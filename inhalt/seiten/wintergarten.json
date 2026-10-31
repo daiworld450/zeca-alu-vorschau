@@ -1,0 +1,92 @@
+{
+  "name": "Wintergarten",
+  "seo": {
+    "title": "Wintergarten Mülheim an der Ruhr & Ruhrgebiet | ZeCa-Alu",
+    "beschreibung": "Wintergarten aus Aluminium und Glas nach Maß – Planung und Montage durch ZeCa-Alu in Mülheim an der Ruhr und im gesamten Ruhrgebiet. Mehr Wohnraum, kostenlose Beratung.",
+    "og_aktiv": true,
+    "breadcrumb_schema": false
+  },
+  "kopf": {
+    "h1": "Wintergarten nach Maß",
+    "lead": "Mehr Wohnraum, mehr Licht: ZeCa-Alu plant und baut Wintergärten aus Aluminium und Glas in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "zeichnung_beschreibung": "Zeichnung eines Wintergartens aus Aluminium und Glas, Maße nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Anfertigung",
+        "wert": "Nach Aufmaß"
+      },
+      {
+        "label": "Konstruktion",
+        "wert": "Aluminium und Glas"
+      },
+      {
+        "label": "Bauart",
+        "wert": "Kalt- oder Warmwintergarten"
+      },
+      {
+        "label": "Verschattung",
+        "wert": "Auf Wunsch von Anfang an eingeplant"
+      }
+    ],
+    "zeichnung_hinweis": "Prinzipzeichnung. Ausführung und Maße nach Aufmaß am Objekt."
+  },
+  "text": {
+    "titel": "Kaltwintergarten oder Warmwintergarten?",
+    "absaetze": [
+      "Ein <strong>Kaltwintergarten</strong> ist unbeheizt und dient vor allem als geschützter Übergangsraum zwischen Terrasse und Haus, ideal für Frühling bis Herbst. Ein <strong>Warmwintergarten</strong> ist gedämmt und beheizbar und lässt sich ganzjährig als vollwertiger Wohnraum nutzen.",
+      "Welche Variante zu Ihnen passt, hängt von Nutzung, Budget und Anschluss an die Haustechnik ab. Das besprechen wir gemeinsam vor Ort. Auf Wunsch planen wir auch eine ausreichende Verschattung, damit der Raum im Sommer nicht überhitzt."
+    ],
+    "foto": {
+      "bild": "terrasse-doppelhaus-2",
+      "alt": "Glas- und Aluminiumkonstruktion, wie sie auch bei Wintergärten von ZeCa-Alu zum Einsatz kommt",
+      "bildunterschrift": "Glas- und Aluminiumkonstruktion, wie sie auch bei Wintergärten von ZeCa-Alu zum Einsatz kommt."
+    }
+  },
+  "schritte": {
+    "titel": "In vier Schritten zum Wintergarten",
+    "eintraege": [
+      {
+        "titel": "Beratung & Aufmaß",
+        "text": "Wir klären Nutzung, Anschluss ans Haus und bautechnische Voraussetzungen."
+      },
+      {
+        "titel": "Planung & Angebot",
+        "text": "Kalt- oder Warmwintergarten, Verglasung, Dämmung und Verschattung werden festgelegt."
+      },
+      {
+        "titel": "Fertigung",
+        "text": "Die Konstruktion wird nach Maß gefertigt."
+      },
+      {
+        "titel": "Montage",
+        "text": "Aufbau und Anschluss an Ihr Haus, sauber und termintreu."
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Wintergarten: Fragen & Antworten",
+    "eintraege": [
+      {
+        "frage": "Brauche ich für einen Wintergarten eine Baugenehmigung?",
+        "antwort": "In der Regel ja, da ein Wintergarten meist als Erweiterung der Wohnfläche gilt. Wir klären den genauen Ablauf für Ihr Vorhaben im Beratungsgespräch."
+      },
+      {
+        "frage": "Kann ich den Wintergarten heizen?",
+        "antwort": "Bei einem Warmwintergarten ja. Die Anbindung an Heizung oder eine eigenständige Lösung planen wir gemeinsam mit Ihnen."
+      },
+      {
+        "frage": "Wird es im Sommer zu heiß?",
+        "antwort": "Ohne Verschattung kann sich Glas stark aufheizen. Wir planen deshalb Beschattung oder öffenbare Elemente von Anfang an mit ein."
+      },
+      {
+        "frage": "Wie unterscheidet sich ein Wintergarten von einer Terrassenüberdachung?",
+        "antwort": "Ein Wintergarten ist an mindestens drei Seiten verglast und meist ans Haus angeschlossen, eine <a href=\"/terrassenueberdachung/\">Terrassenüberdachung</a> schützt vor allem von oben und ist an den Seiten offener."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Mehr Wohnraum für Ihr Zuhause?",
+    "text": "Kostenlose Beratung vor Ort. Wir zeigen Ihnen, was auf Ihrem Grundstück möglich ist.",
+    "button": "Jetzt Beratung anfordern"
+  }
+}

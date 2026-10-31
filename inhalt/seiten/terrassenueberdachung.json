@@ -1,0 +1,129 @@
+{
+  "name": "Terrassenüberdachung",
+  "seo": {
+    "title": "Terrassenüberdachung Mülheim an der Ruhr & Ruhrgebiet | ZeCa-Alu",
+    "beschreibung": "Terrassenüberdachung aus Aluminium nach Maß: Beratung, Planung und Montage durch ZeCa-Alu in Mülheim an der Ruhr und im gesamten Ruhrgebiet. Jetzt kostenlose Beratung anfordern.",
+    "og_aktiv": true,
+    "og_bild": "terrasse-doppelhaus-1",
+    "breadcrumb_schema": true
+  },
+  "kopf": {
+    "h1": "Terrassenüberdachung nach Maß",
+    "lead": "Aluminium-Konstruktion, Glas- oder Stegplattendach, optional mit LED-Beleuchtung und Sichtschutz, geplant und montiert von ZeCa-Alu in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "zeichnung_beschreibung": "Zeichnung einer Terrassenüberdachung aus Aluminium, Maße nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Anfertigung",
+        "wert": "Nach Aufmaß"
+      },
+      {
+        "label": "Konstruktion",
+        "wert": "Aluminium"
+      },
+      {
+        "label": "Dach",
+        "wert": "Verbund-Sicherheitsglas oder Stegplatten"
+      },
+      {
+        "label": "Farbe",
+        "wert": "Pulverbeschichtung nach RAL"
+      }
+    ],
+    "zeichnung_hinweis": "Prinzipzeichnung. Ausführung und Maße nach Aufmaß am Objekt."
+  },
+  "text": {
+    "titel": "Schutz vor Sonne und Regen, das ganze Jahr",
+    "absaetze": [
+      "Eine Terrassenüberdachung verlängert die Nutzbarkeit Ihrer Terrasse deutlich über den Sommer hinaus. Die Aluminium-Konstruktion trägt ein Dach aus Verbund-Sicherheitsglas oder Stegplatten, je nach Wunsch klar, satiniert oder getönt.",
+      "Wir fertigen jede Überdachung nach Aufmaß: Breite, Tiefe, Dachneigung und Farbe (Pulverbeschichtung nach RAL) werden individuell auf Haus und Terrasse abgestimmt. Optional ergänzen wir integrierte LED-Beleuchtung, seitliche Verglasung, Schiebe-Elemente oder textile Beschattung."
+    ],
+    "foto": {
+      "bild": "terrasse-doppelhaus-2",
+      "alt": "Aluminium-Konstruktion einer Terrassenüberdachung von ZeCa-Alu mit integrierter LED-Beleuchtung, Mülheim an der Ruhr"
+    }
+  },
+  "galerie": {
+    "titel": "So sieht das bei uns aus",
+    "text": "Terrassenüberdachung an einem Doppelhaus in Mülheim an der Ruhr, mit geschlossenen Seitenpaneelen in warmer Kupferoptik, integrierten Geräteschränken und dimmbarer LED-Beleuchtung im Dachbereich.",
+    "fotos": [
+      {
+        "bild": "terrasse-doppelhaus-1",
+        "alt": "Terrassenüberdachung Doppelhaus Mülheim an der Ruhr, Gesamtansicht bei Dämmerung",
+        "bildunterschrift": "Gesamtansicht"
+      },
+      {
+        "bild": "terrasse-doppelhaus-2",
+        "alt": "Terrassenüberdachung Doppelhaus Mülheim an der Ruhr, Detail Konstruktion und Beleuchtung",
+        "bildunterschrift": "Detail Konstruktion"
+      }
+    ]
+  },
+  "schritte": {
+    "titel": "In vier Schritten zur fertigen Überdachung",
+    "eintraege": [
+      {
+        "titel": "Beratung & Aufmaß",
+        "text": "Wir besuchen Sie vor Ort, nehmen Maß und besprechen Material, Farbe und Ausstattung, kostenlos und unverbindlich."
+      },
+      {
+        "titel": "Planung & Angebot",
+        "text": "Sie erhalten ein transparentes Angebot mit allen Details, ohne versteckte Kosten."
+      },
+      {
+        "titel": "Fertigung",
+        "text": "Die Konstruktion wird nach Ihren Maßen gefertigt und für die Montage vorbereitet."
+      },
+      {
+        "titel": "Montage",
+        "text": "Unser Team montiert die Überdachung fachgerecht bei Ihnen, termintreu und mit sauberer Baustelle."
+      }
+    ]
+  },
+  "fakten": {
+    "titel": "Warum Aluminium statt Holz",
+    "eintraege": [
+      {
+        "begriff": "Witterungsbeständig",
+        "text": "Kein Streichen, kein Verziehen: Aluminium hält Regen, Frost und UV-Strahlung dauerhaft stand."
+      },
+      {
+        "begriff": "Formstabil",
+        "text": "Auch bei großen Spannweiten bleibt die Konstruktion gerade und tragfähig."
+      },
+      {
+        "begriff": "Pflegeleicht",
+        "text": "Gelegentliches Abwischen reicht, keine jährliche Grundierung wie bei Holz."
+      },
+      {
+        "begriff": "Individuelle Farbe",
+        "text": "Pulverbeschichtung in nahezu jedem RAL-Ton, passend zu Fenstern und Fassade."
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Terrassenüberdachung: Fragen & Antworten",
+    "eintraege": [
+      {
+        "frage": "Brauche ich für eine Terrassenüberdachung eine Baugenehmigung?",
+        "antwort": "Das hängt von Größe, Grundstück und der zuständigen Gemeinde ab. Wir klären das für Ihr konkretes Vorhaben im Beratungsgespräch, ehrlich und ohne Sie mit Papierkram allein zu lassen."
+      },
+      {
+        "frage": "Welche Dachmaterialien gibt es?",
+        "antwort": "Meist Verbund-Sicherheitsglas (klar, satiniert oder getönt) oder Stegplatten aus Polycarbonat. Wir beraten Sie, welche Variante zu Lichteinfall, Budget und Optik Ihres Hauses passt."
+      },
+      {
+        "frage": "Kann ich Beschattung oder Seitenverglasung nachrüsten?",
+        "antwort": "Ja, textile Beschattung, Screens oder eine seitliche Verglasung lassen sich direkt einplanen oder später ergänzen."
+      },
+      {
+        "frage": "Wie pflegeintensiv ist eine Terrassenüberdachung aus Aluminium?",
+        "antwort": "Sehr gering: gelegentliches Abwischen des Rahmens und Reinigen der Dachflächen genügt in der Regel."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Bereit für Ihre eigene Terrassenüberdachung?",
+    "text": "Kostenlose Beratung vor Ort. Wir sagen Ihnen ehrlich, was möglich ist.",
+    "button": "Jetzt Beratung anfordern"
+  }
+}

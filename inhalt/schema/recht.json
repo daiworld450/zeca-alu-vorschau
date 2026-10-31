@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "titel": "Impressum und Datenschutz",
+  "gilt_fuer": [
+    "inhalt/seiten/impressum.json",
+    "inhalt/seiten/datenschutz.json"
+  ],
+  "felder": [
+    {
+      "schluessel": "name",
+      "label": "Name der Seite",
+      "typ": "text",
+      "hilfe": "Erscheint in Menü, Brotkrumen-Navigation und Fußzeile.",
+      "pflicht": true,
+      "max": 30
+    },
+    {
+      "schluessel": "seo",
+      "label": "Suchmaschinen und Vorschau",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "title",
+          "label": "Seitentitel",
+          "typ": "text",
+          "hilfe": "Erscheint im Browser-Tab und als Überschrift in Google. Empfohlen: bis ca. 60 Zeichen, wichtigstes Stichwort zuerst.",
+          "pflicht": true,
+          "max": 90
+        },
+        {
+          "schluessel": "beschreibung",
+          "label": "Beschreibung für Google",
+          "typ": "textarea",
+          "hilfe": "Kurzer Text unter dem Titel in den Suchergebnissen. Empfohlen: 120 bis 160 Zeichen. Platzhalter wie {{telefon}} und {{email}} sind möglich.",
+          "pflicht": true,
+          "max": 320
+        },
+        {
+          "schluessel": "og_aktiv",
+          "label": "Vorschau für soziale Netzwerke ausgeben",
+          "typ": "janein",
+          "hilfe": "Ja: Titel, Adresse (und ggf. Bild) für Facebook, WhatsApp usw. mitsenden.",
+          "pflicht": true
+        },
+        {
+          "schluessel": "og_beschreibung",
+          "label": "Beschreibung für soziale Netzwerke",
+          "typ": "text",
+          "hilfe": "Nur nötig, wenn die Vorschau einen eigenen kürzeren Text haben soll.",
+          "pflicht": false,
+          "max": 200
+        },
+        {
+          "schluessel": "og_bild",
+          "label": "Vorschaubild für soziale Netzwerke",
+          "typ": "bild",
+          "hilfe": "Es wird das Original-JPG des Fotos verwendet. Leer lassen = kein Vorschaubild.",
+          "pflicht": false,
+          "groesse": {
+            "breite": 1600,
+            "hoehe": 1200,
+            "seitenverhaeltnis": "4:3",
+            "hinweis": "Querformat 4:3, mindestens 1600 x 1200 Pixel, echtes Foto. Pro Foto gibt es drei WebP-Dateien: <name>-800.webp, <name>-1600.webp, <name>-2048.webp."
+          }
+        }
+      ]
+    },
+    {
+      "schluessel": "kopf",
+      "label": "Seitenkopf",
+      "typ": "gruppe",
+      "hilfe": "",
+      "pflicht": true,
+      "felder": [
+        {
+          "schluessel": "h1",
+          "label": "Überschrift (H1)",
+          "typ": "text",
+          "hilfe": "Die Hauptüberschrift der Seite, nur einmal pro Seite.",
+          "pflicht": true,
+          "max": 80
+        }
+      ]
+    }
+  ],
+  "hinweis": "Der eigentliche Rechtstext steht als HTML-Datei in inhalt/recht/ und wird nicht über ein Formular bearbeitet.",
+  "typ": "gruppe"
+}

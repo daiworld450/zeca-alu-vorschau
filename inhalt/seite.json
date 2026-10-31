@@ -1,0 +1,76 @@
+{
+  "firma": {
+    "name": "ZeCa-Alu",
+    "inhaber": "Zemin Yüregil",
+    "slogan": "Ihre Träume, unser Handwerk"
+  },
+  "kontakt": {
+    "telefone": [
+      {
+        "anzeige": "0176 24860016"
+      },
+      {
+        "anzeige": "0176 24860069"
+      }
+    ],
+    "email": "info@zeca-alu.de",
+    "strasse": "Folkenbornstraße 51",
+    "plz": "45472",
+    "ort": "Mülheim an der Ruhr",
+    "instagram": "https://www.instagram.com/zeca_alu",
+    "facebook": "https://www.facebook.com/61566838091135/"
+  },
+  "einsatzgebiet": {
+    "sitz": "Mülheim an der Ruhr",
+    "nachbarn": [
+      "Essen",
+      "Oberhausen",
+      "Duisburg"
+    ],
+    "weitere": [
+      "Bottrop",
+      "Dinslaken",
+      "Gelsenkirchen",
+      "Bochum",
+      "Düsseldorf"
+    ],
+    "beschriftung_sitz": "Unser Sitz",
+    "beschriftung_nachbarn": "Nachbarstädte",
+    "beschriftung_weitere": "Weitere Städte im Einsatzgebiet"
+  },
+  "navigation": {
+    "leistungen": "Leistungen",
+    "cta": "Angebot anfordern",
+    "mobil_anrufen": "anrufen",
+    "mobilleiste_anrufen": "Anrufen"
+  },
+  "texte": {
+    "beratung_button": "Kostenlose Beratung anfordern"
+  },
+  "formular": {
+    "aktion": "https://formsubmit.co/ajax/info@zeca-alu.de",
+    "betreff": "Neue Anfrage über zeca-alu.de",
+    "titel": "Anfrage senden",
+    "button": "Anfrage absenden",
+    "datenschutzhinweis": "Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß unserer <a href=\"/datenschutz/\">Datenschutzerklärung</a> zu.",
+    "option_sonstiges": "Sonstiges"
+  },
+  "karte": {
+    "hinweis": "Beim Laden der Karte wird eine Verbindung zu Google Maps aufgebaut und Ihre IP-Adresse übertragen.",
+    "button": "Karte anzeigen"
+  },
+  "footer": {
+    "beschreibung": "Terrassenüberdachung, Carport, Wintergarten und mehr, geplant und montiert im gesamten Ruhrgebiet.",
+    "jahr": "2026"
+  },
+  "veroeffentlichung": {
+    "domain": "https://daiworld450.github.io",
+    "basis_pfad": "/zeca-alu-vorschau/",
+    "noindex": true
+  },
+  "admin": {
+    "aktiv": true,
+    "repo": "daiworld450/zeca-alu-vorschau",
+    "branch": "inhalt"
+  }
+}

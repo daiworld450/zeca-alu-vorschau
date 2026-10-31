@@ -1,0 +1,92 @@
+{
+  "name": "Carport",
+  "seo": {
+    "title": "Carport Mülheim an der Ruhr & Ruhrgebiet | ZeCa-Alu",
+    "beschreibung": "Carport aus Aluminium nach Maß für ein oder zwei Fahrzeuge – Planung und Montage durch ZeCa-Alu in Mülheim an der Ruhr und im gesamten Ruhrgebiet. Kostenlose Beratung.",
+    "og_aktiv": true,
+    "breadcrumb_schema": false
+  },
+  "kopf": {
+    "h1": "Carport nach Maß",
+    "lead": "Ein robuster Unterstand für ein oder zwei Fahrzeuge, individuell geplant und in Aluminium gefertigt, von ZeCa-Alu montiert in Mülheim an der Ruhr und im gesamten Ruhrgebiet.",
+    "zeichnung_beschreibung": "Zeichnung eines Carports aus Aluminium mit Fahrzeug als Geisterlinie, Maße nach Aufmaß",
+    "datenblatt": [
+      {
+        "label": "Anfertigung",
+        "wert": "Nach Aufmaß"
+      },
+      {
+        "label": "Konstruktion",
+        "wert": "Aluminium"
+      },
+      {
+        "label": "Dach",
+        "wert": "Trapezblech, Stegplatten oder Glas"
+      },
+      {
+        "label": "Bauform",
+        "wert": "Einzel- oder Doppelcarport"
+      }
+    ],
+    "zeichnung_hinweis": "Prinzipzeichnung. Ausführung und Maße nach Aufmaß am Objekt."
+  },
+  "text": {
+    "titel": "Stellplatz mit Stil, nicht von der Stange",
+    "absaetze": [
+      "Ob Einzel- oder Doppelcarport, freistehend oder an die Terrassenüberdachung angebaut: Wir planen die Tragkonstruktion passend zu Grundstück, Zufahrt und Optik Ihres Hauses.",
+      "Als Ergänzung bauen wir bei Bedarf einen integrierten Geräteschrank für Gartenmöbel, Fahrräder oder Mülltonnen direkt in die Konstruktion ein, platzsparend und optisch aus einem Guss."
+    ],
+    "foto": {
+      "bild": "terrasse-doppelhaus-1",
+      "alt": "Aluminium-Überdachungskonstruktion von ZeCa-Alu, wie sie auch für Carports zum Einsatz kommt",
+      "bildunterschrift": "Aluminium-Überdachungskonstruktion von ZeCa-Alu, wie sie auch für Carports zum Einsatz kommt."
+    }
+  },
+  "schritte": {
+    "titel": "In vier Schritten zum fertigen Carport",
+    "eintraege": [
+      {
+        "titel": "Beratung & Aufmaß",
+        "text": "Wir prüfen vor Ort, wie viel Platz vorhanden ist und was baurechtlich zu beachten ist."
+      },
+      {
+        "titel": "Planung & Angebot",
+        "text": "Größe, Dachmaterial, Farbe und Zubehör wie Geräteschrank oder Beleuchtung werden festgelegt."
+      },
+      {
+        "titel": "Fertigung",
+        "text": "Die Konstruktion wird nach Maß gefertigt."
+      },
+      {
+        "titel": "Montage",
+        "text": "Aufbau vor Ort, inklusive Fundamentierung nach statischen Vorgaben."
+      }
+    ]
+  },
+  "faq": {
+    "titel": "Carport: Fragen & Antworten",
+    "eintraege": [
+      {
+        "frage": "Brauche ich für einen Carport eine Baugenehmigung?",
+        "antwort": "Das hängt von Größe, Grenzabstand und der jeweiligen Gemeinde ab. Wir prüfen das für Ihr Grundstück im Beratungsgespräch."
+      },
+      {
+        "frage": "Einzel- oder Doppelcarport: was passt zu mir?",
+        "antwort": "Das richtet sich nach Grundstückszuschnitt und Fahrzeuganzahl. Wir zeigen Ihnen bei der Beratung realistische Varianten für Ihren Platz."
+      },
+      {
+        "frage": "Kann eine Ladestation für Elektroautos vorbereitet werden?",
+        "antwort": "Ja, das lässt sich bei der Planung berücksichtigen. Die elektrische Anbindung erfolgt durch einen Elektrofachbetrieb."
+      },
+      {
+        "frage": "Welche Dachmaterialien stehen zur Auswahl?",
+        "antwort": "Je nach Wunsch Trapezblech, Stegplatten oder Glas. Wir beraten Sie zu Kosten, Optik und Lichtdurchlässigkeit."
+      }
+    ]
+  },
+  "cta": {
+    "titel": "Planen Sie einen Carport?",
+    "text": "Kostenlose Beratung vor Ort. Wir sagen Ihnen ehrlich, was auf Ihrem Grundstück möglich ist.",
+    "button": "Jetzt Beratung anfordern"
+  }
+}

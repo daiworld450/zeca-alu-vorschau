@@ -1,0 +1,127 @@
+{
+  "hinweis": "Seitenregister und Aufbau der Navigation. Nicht fuer das Admin-Formular gedacht, nur fuer Entwickler.",
+  "technik": {
+    "css_version": "4",
+    "js_version": "3"
+  },
+  "seiten": [
+    {
+      "id": "start",
+      "pfad": "",
+      "inhalt": "startseite",
+      "vorlage": "startseite",
+      "prioritaet": 1.0
+    },
+    {
+      "id": "terrassenueberdachung",
+      "pfad": "terrassenueberdachung/",
+      "inhalt": "terrassenueberdachung",
+      "vorlage": "leistung",
+      "prioritaet": 0.9
+    },
+    {
+      "id": "carport",
+      "pfad": "carport/",
+      "inhalt": "carport",
+      "vorlage": "leistung",
+      "prioritaet": 0.9
+    },
+    {
+      "id": "wintergarten",
+      "pfad": "wintergarten/",
+      "inhalt": "wintergarten",
+      "vorlage": "leistung",
+      "prioritaet": 0.8
+    },
+    {
+      "id": "vordach",
+      "pfad": "vordach/",
+      "inhalt": "vordach",
+      "vorlage": "leistung",
+      "prioritaet": 0.7
+    },
+    {
+      "id": "alu-zaun",
+      "pfad": "alu-zaun/",
+      "inhalt": "alu-zaun",
+      "vorlage": "leistung",
+      "prioritaet": 0.7
+    },
+    {
+      "id": "fliegengitter",
+      "pfad": "fliegengitter/",
+      "inhalt": "fliegengitter",
+      "vorlage": "leistung",
+      "prioritaet": 0.7
+    },
+    {
+      "id": "einsatzgebiet",
+      "pfad": "einsatzgebiet/",
+      "inhalt": "einsatzgebiet",
+      "vorlage": "einsatzgebiet",
+      "prioritaet": 0.8
+    },
+    {
+      "id": "referenzen",
+      "pfad": "referenzen/",
+      "inhalt": "referenzen",
+      "vorlage": "referenzen",
+      "prioritaet": 0.7
+    },
+    {
+      "id": "ueber-uns",
+      "pfad": "ueber-uns/",
+      "inhalt": "ueber-uns",
+      "vorlage": "ueber-uns",
+      "prioritaet": 0.6
+    },
+    {
+      "id": "kontakt",
+      "pfad": "kontakt/",
+      "inhalt": "kontakt",
+      "vorlage": "kontakt",
+      "prioritaet": 0.8
+    },
+    {
+      "id": "impressum",
+      "pfad": "impressum/",
+      "inhalt": "impressum",
+      "vorlage": "recht",
+      "prioritaet": 0.2,
+      "recht_datei": "impressum.html"
+    },
+    {
+      "id": "datenschutz",
+      "pfad": "datenschutz/",
+      "inhalt": "datenschutz",
+      "vorlage": "recht",
+      "prioritaet": 0.2,
+      "recht_datei": "datenschutz.html"
+    }
+  ],
+  "hauptmenue": [
+    "start",
+    "leistungen",
+    "einsatzgebiet",
+    "referenzen",
+    "ueber-uns"
+  ],
+  "leistungen": [
+    "terrassenueberdachung",
+    "carport",
+    "wintergarten",
+    "vordach",
+    "alu-zaun",
+    "fliegengitter"
+  ],
+  "footer_unternehmen": [
+    "ueber-uns",
+    "referenzen",
+    "einsatzgebiet",
+    "kontakt"
+  ],
+  "footer_recht": [
+    "impressum",
+    "datenschutz"
+  ]
+}

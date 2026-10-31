@@ -1,0 +1,22 @@
+  <section class="kopf-schlicht">
+    <div class="sheet">
+      {{> brotkrumen}}
+      <h1 style="margin-top:clamp(6px,1vw,14px)">{{kopf.h1}}</h1>
+      <p class="lead">{{kopf.lead}}</p>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="sheet">
+      <div class="split rev">
+        <div class="prose"><h2>{{text.titel}}</h2>{{#jede text.absaetze}}<p>{{.}}</p>{{/jede}}</div>
+        <figure><div class="photo">{{text.foto.img}}</div>{{#wenn text.foto.bildunterschrift}}<figcaption class="cap">{{text.foto.bildunterschrift}}</figcaption>{{/wenn}}</figure>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="sheet">
+      <h2>{{werte.titel}}</h2>
+      <div class="values">{{#jede werte.eintraege}}<div>{{> haken_symbol}}<h3>{{titel}}</h3><p>{{text}}</p></div>{{/jede}}</div>
+    </div>
+  </section>
+  {{> cta_band}}
