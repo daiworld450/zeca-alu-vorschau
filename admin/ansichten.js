@@ -95,7 +95,7 @@ export function zeigeLogin(main, { fehler = "", beiAnmelden, repo }) {
         schritt("Bei GitHub anmelden und ",
           h("a", { href: "https://github.com/settings/personal-access-tokens/new", target: "_blank", rel: "noopener noreferrer" }, "diese Seite öffnen", icon("extern")),
           " („Fine-grained personal access token“, neuer Schlüssel)."),
-        schritt("Name: ", h("strong", null, "ZeCa-Alu Verwaltung"), ". Ablauf („Expiration“): höchstens ", h("strong", null, "1 Jahr"), " (365 Tage)."),
+        schritt("Name: ", h("strong", null, "ZeCa-Alu Verwaltung"), ". Ablauf („Expiration“): ", h("strong", null, "30 bis 90 Tage"), " (empfohlen: 90 Tage), nicht länger."),
         schritt("Bei „Repository access“ ", h("strong", null, "Only select repositories"), " wählen und genau dieses Projekt auswählen: ", h("strong", { class: "mono" }, repo), "."),
         schritt("Unter „Permissions“ → „Repository permissions“ einstellen:",
           h("ul", { class: "rechte" },
