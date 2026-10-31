@@ -67,10 +67,11 @@ jobs:
         run: |
           set -euo pipefail
           git worktree add --detach "$RUNNER_TEMP/inhalt-zweig" origin/inhalt
+          # Vergleich per Prüfsumme (-c): Mit Größe und Zeit (-t) übersah rsync Änderungen, wenn Größe und Sekunde gleich waren (im Probelauf gefunden).
           # Texte und Einstellungen. schema/ und struktur.json bleiben aus main (Entwickler-Dateien), Verknüpfungen werden übersprungen.
-          rsync -rt --no-links --delete --exclude='schema/' --exclude='struktur.json' "$RUNNER_TEMP/inhalt-zweig/inhalt/" inhalt/
+          rsync -rc --no-links --delete --exclude='schema/' --exclude='struktur.json' "$RUNNER_TEMP/inhalt-zweig/inhalt/" inhalt/
           # Fotos: nur Bilddateien. Andere Dateien in images/ (Notizen, Maßdateien) bleiben unberührt und werden nicht ausgeliefert.
-          rsync -rt --no-links --delete --include='*/' --include='*.webp' --include='*.jpg' --include='*.jpeg' --include='*.png' --exclude='*' \
+          rsync -rc --no-links --delete --include='*/' --include='*.webp' --include='*.jpg' --include='*.jpeg' --include='*.png' --exclude='*' \
             "$RUNNER_TEMP/inhalt-zweig/images/" images/
 
       - name: Seite bauen (prüft zuerst, baut nur bei 0 Fehlern)
